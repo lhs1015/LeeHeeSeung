@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <header>
-    <meta content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </header>
     
 <head>
@@ -266,7 +266,7 @@
             const val1 = document.getElementById("attribute1_option1");
 
             if (val1.checked) {
-                document.getElementById("attribute2_option2").disabled = false;
+                document.getElementById("attribute2_option1").disabled = false;
                 document.getElementById("attribute2_option1").checked = true;
                 document.getElementById("attribute2_option2").disabled = true;
                 document.getElementById("attribute3_option1").disabled = true;
@@ -325,13 +325,13 @@
             const val1 = document.getElementById("attribute1_option5");
             if (val1.checked) {
                 document.getElementById("attribute2_option1").disabled = true;
-                document.getElementById("attribute2_option2").disabled = true;
+                document.getElementById("attribute2_option2").disabled = false;
                 document.getElementById("attribute3_option1").disabled = true;
-                document.getElementById("attribute3_option2").disabled = true;
+                document.getElementById("attribute3_option2").disabled = false;
                 document.getElementById("attribute2_option1").checked = false;
-                document.getElementById("attribute2_option2").checked = false;
+                document.getElementById("attribute2_option2").checked = true;
                 document.getElementById("attribute3_option1").checked = false;
-                document.getElementById("attribute3_option2").checked = false;
+                document.getElementById("attribute3_option2").checked = true;
 
             } else {
                 document.getElementById("attribute2_option1").disabled = false;
@@ -345,13 +345,13 @@
             const val1 = document.getElementById("attribute1_option6");
             if (val1.checked) {
                 document.getElementById("attribute2_option1").disabled = true;
-                document.getElementById("attribute2_option2").disabled = true;
+                document.getElementById("attribute2_option2").disabled = false;
                 document.getElementById("attribute3_option1").disabled = true;
-                document.getElementById("attribute3_option2").disabled = true;
+                document.getElementById("attribute3_option2").disabled = false;
                 document.getElementById("attribute2_option1").checked = false;
-                document.getElementById("attribute2_option2").checked = false;
+                document.getElementById("attribute2_option2").checked = true;
                 document.getElementById("attribute3_option1").checked = false;
-                document.getElementById("attribute3_option2").checked = false;
+                document.getElementById("attribute3_option2").checked = true;
 
             } else {
                 document.getElementById("attribute2_option1").disabled = false;
