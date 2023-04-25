@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html>
 <header>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0">
 </header>
     
 <head>
     <title>专辑购买指南</title>
 </head>
-<body style="background-color:#b4b4b4;">
+<body style="background-color:#b4b4b4;width:88%;margin:auto">
     <br>
     <h1>李羲承中输买专自测器 </h1>
     <div>
-        <img class="left-img"  src="pictures/header.jpg"  style="width:100%">       
+        <img src="pictures/header.jpg"  style="width:100%">       
         <p><b>阅前须知：</b></p>
-        <p class="image-text">&#x1F439;建议经验丰富西米露们仔细阅读，确认细节后再下单，避免产生不必要的损失！</p>
-        <p class="image-text">&#x1F98C;其他问题可移步<a href="http://t.cn/A69uDg87">答疑群</a>以及<a href="https://weibo.com/p/1008081dcc563b60d9ee5369a74c2241c6001c_-_feed">超话</a></p>
-        <p class="image-text">&#x1F97A;内容有误欢迎大家及时指出</p>
+        <p>&#x1F439;建议经验丰富西米露们仔细阅读，确认细节后再下单，避免产生不必要的损失！</p>
+        <p>&#x1F98C;其他问题可移步<a href="http://t.cn/A69uDg87">答疑群</a>以及<a href="https://weibo.com/p/1008081dcc563b60d9ee5369a74c2241c6001c_-_feed">超话</a></p>
+        <p>&#x1F97A;内容有误欢迎大家及时指出</p>
     </div>
     <hr>
  	<form>
@@ -29,11 +29,10 @@
 		<label for="attribute1_option3">100-200</label>
         <input type="radio" id="attribute1_option4" name="attribute1" value="option4">
 		<label for="attribute1_option4">200-400</label>
-        <!-- <input type="radio" id="attribute1_option5" name="attribute1" value="option5">
-		<label for="attribute1_option5">400-500</label>
+        <input type="radio" id="attribute1_option5" name="attribute1" value="option5">
+		<label for="attribute1_option5">400-600</label>
         <input type="radio" id="attribute1_option6" name="attribute1" value="option6">
-		<label for="attribute1_option6">600</label> -->
-		</label>
+		<label for="attribute1_option6">600-1000</label>
         <br><br>
 
 		<label for="attribute2">指定封面:</label>
@@ -49,15 +48,15 @@
 		<input type="radio" id="attribute3_option2" name="attribute3" value="option2">
 		<label for="attribute3_option2">指定羲承特典</label>
 	    <br><br>
-		<input type="submit" value="提交" style = "display:block;margin:auto;font-size:2.0vw">
+		<input type="submit" value="提交" style = "display:block;margin:auto;font-size:1.8vw">
 	</form>
 
-	<div id="recommended-products">
-		<!-- Display the recommended products here -->
+	<div id="recommendation">
+		<!-- recommendation -->
 	</div>
 </body>
 	<script>
-		const products = [
+		const recommendations = [
 			{
                 name:"你选择了：60以下预算",                
 				image: "pictures/engene.png",
@@ -146,7 +145,7 @@
 
             {
 				name:"你选择的,200元-400元预算 随机封面，随机特典",
-				image: "pictures/full.png",
+				image: "pictures/full.jpg",
                 description:'看来你只是想支持一下羲承中输，太感谢啦！请点击<a href="https://cn.ktown4u.com/iteminfo?grp_no=1741898&fanc_goods_no=206170&goods_no=93862">K4写真集版套装</a>',
 				attribute1: "option4",
 				attribute2: "option1",
@@ -181,9 +180,27 @@
 				attribute3: "option2",
                 link: "https://cn.ktown4u.com/iteminfo?grp_no=1741898&fanc_goods_no=206175&goods_no=93869"
 			},
+            {
+				name:"你选择的,400元-600元预算 羲承封面，羲承特典",
+				image: "pictures/full.jpg",
+                description:'真不错，这个预算下你所有的东西都可以成套了，不如考虑拥有一整套<a href="http://m.liveonepick.com/#/?productId=9b1ba50671de4ed38addfce8bfede72d&continueFlag=0e5a6e2357868bec5d1396545de0dec0">Weverse单封特典套装</a>吧！曾经出过美卡，这个版本赠送的东西也是最多的，虽然有点贵，赌一把！<br>',
+				attribute1: "option5",
+				attribute2: "none",
+				attribute3: "none",
+                link: "http://m.liveonepick.com/#/?productId=9b1ba50671de4ed38addfce8bfede72d&continueFlag=0e5a6e2357868bec5d1396545de0dec0"
+			},
+            {
+				name:"你选择的,600元-1000元预算 羲承封面，羲承特典",
+				image: "pictures/cover.png",
+                description:'太感动了！这个预算我们可以拥有2整套甚至更多特典了，这个程度的预算如果你依旧不想拼车，可以选择<br><a href="https://cn.ktown4u.com/iteminfo?grp_no=1742515&fanc_goods_no=206167&goods_no=93878">A 烦死了我就想给羲承打中输看这里</a><br><a href="https://www.nanyiglobal.com/2304ENPODGPB-652644-0?continueFlag=0e5a6e2357868bec5d1396545de0dec0">B 我想在一个平台买完一切</a><br><a href="http://t.cn/A69uDg87">C 来个人帮我</a>',
+				attribute1: "option6",
+				attribute2: "none",
+				attribute3: "none",
+                link: "https://cn.ktown4u.com/iteminfo?grp_no=1742515&fanc_goods_no=206167&goods_no=93878"
+			},
 		];	
 
-		// Add an event listener to the form submit button
+		//form
 		const form = document.querySelector("form");
 		form.addEventListener("submit", function(event) {
 			event.preventDefault(); // Prevent the form from submitting
@@ -199,70 +216,55 @@
             const att2 = attribute2.disabled || attribute2_check == null ? "none" : attribute2_check.value;
             const att3 = attribute3.disabled || attribute3_check == null ? "none" : attribute3_check.value;
 
-			const filteredProducts = products.filter(function(product) {
-				return product.attribute1 === att1 && product.attribute2 === att2 && product.attribute3 === att3;
+			const filteredProducts = recommendations.filter(function(recommendation) {
+				return recommendation.attribute1 === att1 && recommendation.attribute2 === att2 && recommendation.attribute3 === att3;
 			});
 
-			// Create the HTML to display the recommended products
-			let recommendedProductsHTML = "";
-			filteredProducts.forEach(function(product) {
-				recommendedProductsHTML += `
+			// HTML recommendation showing
+			let recommendationHTML = "";
+			filteredProducts.forEach(function(recommendation) {
+				recommendationHTML += `
 					<div>
-						<p>${product.name}</p>
-                        <p>${product.description}</p>
-                        <a href="${product.link}"><img src="${product.image}" style="max-width:80%;height:auto;margin:auto"></a>
+						<p>${recommendation.name}</p>
+                        <p>${recommendation.description}</p>
+                        <a href="${recommendation.link}"><img src="${recommendation.image}" style="max-width:80%;height:auto;margin:auto"></a>
                 </div>
 				`;
                 
 			});
 
-			// Display the recommended products
-			const recommendedProductsContainer = document.querySelector("#recommended-products");
-			recommendedProductsContainer.innerHTML = recommendedProductsHTML;
+			//recommendation
+			const recommendationBox = document.querySelector("#recommendation");
+			recommendationBox.innerHTML = recommendationHTML;
 		});
 
 
-        function clickYes() {
-            if (document.getElementById("ResponseSaidCBN").checked) {
-                document.getElementById("ResponseSaidCBN").checked = false;
-            }
-            // if (document.getElementById("ResponseSaidCBY").checked) {
-            //     document.getElementById("ResponseSaidOpt1").disabled = true;
-            // }
-        }
         
-        function clickNo() {
-            if (document.getElementById("ResponseSaidCBY").checked) {
-                document.getElementById("ResponseSaidCBY").checked = false;
-            }
-            // if (document.getElementById("ResponseSaidCBN").checked) {
-            //     document.getElementById("ResponseSaidOpt1").disabled = false;
-            // }
-        }
-        
-        // function modifyText1() {
-        //     const val1 = document.getElementById("attribute1_option1");
 
-        //     if (val1.checked) {
-        //         document.getElementById("attribute2_option1").disabled = true;
-        //         document.getElementById("attribute2_option2").disabled = true;
-        //         document.getElementById("attribute3_option1").disabled = true;
-        //         document.getElementById("attribute3_option2").disabled = true;
-        //     } else {
-        //         document.getElementById("attribute2_option1").disabled = false;
-        //         document.getElementById("attribute2_option2").disabled = false;
-        //         document.getElementById("attribute3_option1").disabled = false;
-        //         document.getElementById("attribute3_option2").disabled = false;
-        //     }
-        // }
+        //listener
+        const el1 = document.getElementById("attribute1_option1")
+        el1.addEventListener("click", radioOption1);
 
+        const el2 = document.getElementById("attribute1_option2");
+        el2.addEventListener("click", radioOption2);
 
-        //AAAA
-        function modifyText1() {
+        const el3 = document.getElementById("attribute1_option3");
+        el3.addEventListener("click", radioOption3);
+
+        const el4 = document.getElementById("attribute1_option4");
+        el4.addEventListener("click", radioOption4);
+
+        const el5 = document.getElementById("attribute1_option5");
+        el5.addEventListener("click", radioOption5);
+
+        const el6 = document.getElementById("attribute1_option6");
+        el6.addEventListener("click", radioOption6);
+
+        //radio option
+        function radioOption1() {
             const val1 = document.getElementById("attribute1_option1");
 
             if (val1.checked) {
-                // document.getElementById("attribute2_option1").disabled = false;
                 document.getElementById("attribute2_option2").disabled = false;
                 document.getElementById("attribute2_option1").checked = true;
                 document.getElementById("attribute2_option2").disabled = true;
@@ -276,7 +278,7 @@
             }
         }
 
-        function modifyText2() {
+        function radioOption2() {
             const val1 = document.getElementById("attribute1_option2");
 
             if (val1.checked) {
@@ -287,8 +289,7 @@
             }
         }
 
-
-        function modifyText3() {
+        function radioOption3() {
             const val1 = document.getElementById("attribute1_option3");
 
             if (val1.checked) {
@@ -304,7 +305,7 @@
             }
         }
 
-        function modifyText4() {
+        function radioOption4() {
             const val1 = document.getElementById("attribute1_option4");
             if (val1.checked) {
                 document.getElementById("attribute2_option1").disabled = false;
@@ -319,13 +320,17 @@
             }
         }
 
-        function modifyText5() {
+        function radioOption5() {
             const val1 = document.getElementById("attribute1_option5");
             if (val1.checked) {
                 document.getElementById("attribute2_option1").disabled = true;
-                document.getElementById("attribute2_option2").disabled = false;
+                document.getElementById("attribute2_option2").disabled = true;
                 document.getElementById("attribute3_option1").disabled = true;
-                document.getElementById("attribute3_option2").disabled = false;
+                document.getElementById("attribute3_option2").disabled = true;
+                document.getElementById("attribute2_option1").checked = false;
+                document.getElementById("attribute2_option2").checked = false;
+                document.getElementById("attribute3_option1").checked = false;
+                document.getElementById("attribute3_option2").checked = false;
 
             } else {
                 document.getElementById("attribute2_option1").disabled = false;
@@ -335,140 +340,26 @@
             }
         }
 
-        function modifyText6() {
+        function radioOption6() {
             const val1 = document.getElementById("attribute1_option6");
             if (val1.checked) {
                 document.getElementById("attribute2_option1").disabled = true;
-                document.getElementById("attribute2_option2").disabled = false;
+                document.getElementById("attribute2_option2").disabled = true;
                 document.getElementById("attribute3_option1").disabled = true;
-                document.getElementById("attribute3_option2").disabled = false;
+                document.getElementById("attribute3_option2").disabled = true;
+                document.getElementById("attribute2_option1").checked = false;
+                document.getElementById("attribute2_option2").checked = false;
+                document.getElementById("attribute3_option1").checked = false;
+                document.getElementById("attribute3_option2").checked = false;
 
             } else {
                 document.getElementById("attribute2_option1").disabled = false;
                 document.getElementById("attribute2_option2").disabled = false;
                 document.getElementById("attribute3_option1").disabled = false;
                 document.getElementById("attribute3_option2").disabled = false;
-
             }
         }
-
-
-        // const el1 = document.getElementById("attribute1_option1") ;
-        // el1.addEventListener("click", modifyText1);
-        
-        const el1 = document.getElementById("attribute1_option1")
-        el1.addEventListener("click", modifyText1);
-
-        const el2 = document.getElementById("attribute1_option2");
-        el2.addEventListener("click", modifyText2);
-
-        const el3 = document.getElementById("attribute1_option3");
-        el3.addEventListener("click", modifyText3);
-
-        const el4 = document.getElementById("attribute1_option4");
-        el4.addEventListener("click", modifyText4);
-
-        // const el5 = document.getElementById("attribute1_option5");
-        // el5.addEventListener("click", modifyText5);
-
-        // const el6 = document.getElementById("attribute1_option6");
-        // el6.addEventListener("click", modifyText6);
-        
-        //AAAA
-
-
-        // document.getElementById("ResponseSaidCBY").onchange = clickYes;
-        // document.getElementById("ResponseSaidCBN").onchange = clickNo;
-
     </script>
-
-
 
 </html>
 
-
-<style>
-a {
-  color: #1772d0;
-  text-decoration: none;
-}
-
-a:focus,
-a:hover {
-  color: #f09228;
-  text-decoration: none;
-}
-
-body {
-    /* max-width: 800px; */
-    width:85%;
-    margin: auto;
-    padding-left: 2vw;
-    padding-right: 2vw;
-}
-
-body,
-td,
-th,
-tr,
-p,
-a {
-  font-family: Verdana, Helvetica, sans-serif;
-  font-size: calc(8px + 1.0vw)
-}
-
-h1 {
-  font-family: Verdana, Helvetica, sans-serif;
-  font-size: calc(12px + 1.5vw);
-}
-
-name {
-  font-family: Verdana, Helvetica, sans-serif;
-  font-size: 32px;
-}
-
-.one {
-  width: 160px;
-  height: 160px;
-  position: relative;
-}
-
-.two {
-  width: 160px;
-  height: 160px;
-  position: absolute;
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
-}
-
-.fade {
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
-}
-
-span.highlight {
-  font-family: Verdana, Helvetica, sans-serif;
-  background-color: #ffffd0;
-}
-
-.small {
-  font-size: 0.8vw;
-}
-
-.left-img {
-    /* float: left; */
-    /* margin-right: 0.5vw; */
-      }
-      
-.image-text {
-  margin-left: 0.5vw;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-input[type=submit] {
-    width: calc(30px + 5.0vw);  height: calc(30px + 2.5vw);
-}
-</style>
