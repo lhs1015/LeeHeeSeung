@@ -6,34 +6,19 @@
     
 <head>
     <title>专辑购买指南</title>
-    <style>
-        [disabled] {
-        color: gray;
-        }
-    </style>
-    </head>
-<body>
-    <br><br>
-    <br><br>
+</head>
+<body style="background-color:#b4b4b4;">
+    <br>
     <h1>李羲承中输买专自测器 </h1>
-    <hr>
-
     <div>
-        <div style="background-color:#b4b4b4;">
-            <img class="left-img"  src="pictures/header.jpg"  style="margin:10% auto;width:100%">       
-        </div> 
+        <img class="left-img"  src="pictures/header.jpg"  style="width:100%">       
         <p><b>阅前须知：</b></p>
         <p class="image-text">&#x1F439;建议经验丰富西米露们仔细阅读，确认细节后再下单，避免产生不必要的损失！</p>
         <p class="image-text">&#x1F98C;其他问题可移步答疑群以及超话</p>
         <p class="image-text">&#x1F97A;内容有误欢迎大家及时指出</p>
     </div>
-
-
+    <hr>
  	<form>
-        <br><br>
-
-        <hr>
-
         <p>请选择：</p>
 		<label for="attribute1">预算:</label>
 		<input type="radio" id="attribute1_option1" name="attribute1" value="option1">
@@ -64,7 +49,7 @@
 		<input type="radio" id="attribute3_option2" name="attribute3" value="option2">
 		<label for="attribute3_option2">指定羲承特典</label>
 	    <br><br>
-		<input type="submit" value="提交" style = "font-size:2.0vw">
+		<input type="submit" value="提交" style = "display:block;margin:auto;font-size:2.0vw">
 	</form>
 
 	<div id="recommended-products">
@@ -75,113 +60,126 @@
 		const products = [
 			{
                 name:"你选择了：60以下预算",                
-				// image: "pictures/header.JPG",
+				image: "pictures/engene.png",
                 description:'很抱歉，预算60以下可能无法指定获得羲承单封，不过可以考虑赌一把K4裸专，或是选择在不要专辑的情况下购买K4不运回（可获得羲承拍立得和随机小卡）价格50元（不运回）/52元（运回，要补邮费） <a href="https://cn.ktown4u.com/eventsub?eve_no=6954375&biz_no=599">购买</a>。',
 				attribute1: "option1",
 				attribute2: "option1",
 				attribute3: "none",
+                link: "https://cn.ktown4u.com/eventsub?eve_no=6954375&biz_no=599"
 			},
 			{
 				name: "你选择的是：60~100预算 随机封面，随机特典",
-				// image: "figs/IZTP.JPG",
+				image: "pictures/full.jpg",
                 description:'60~100元全随机可以直接在K4购买裸专一张，<a href="https://cn.ktown4u.com/iteminfo?grp_no=1741898&fanc_goods_no=206174&goods_no=93855">PB版（团体写真集版）</a>和<a href="https://cn.ktown4u.com/iteminfo?grp_no=1741898&fanc_goods_no=206183&goods_no=93858">单封版（随机成员封面）</a>均可购入',
 				attribute1: "option2",
 				attribute2: "option1",
 				attribute3: "option1",
+                link: "https://cn.ktown4u.com/eventsub?eve_no=6954375&biz_no=599",
 			},
 			{
 				name: "你选择的是：60~100预算 随机封面，羲承特典",
-				// image: "figs/ichai.PNG",
+				image: "pictures/engene.png",
                 description:'目前你有两种选择：<br>等待小鹿园x星河集美分批发售的98.8元1+1羲承套装（需补运费，无特典，获得羲承单封+随机一张共计两张）或是购买K4裸专（52元/50元），这样可以获得羲承专辑或者特典<br><a href="https://cn.ktown4u.com/eventsub?eve_no=6954375&biz_no=599">购买：K4</a><br><a href="https://weibo.com/u/3587556515">小鹿园wb</a>',
 				attribute1: "option2",
 				attribute2: "option1",
 				attribute3: "option2",
+                link: "https://cn.ktown4u.com/eventsub?eve_no=6954375&biz_no=599"
 			},
 			{
 				name:"你选择的是：60~100预算 羲承封面，随机特典",
-				// image: "figs/sorry.png",
+				image: "pictures/engenecover.png",
                 description:'目前你有两种选择：<br>等待小鹿园x星河集美分批发售的98.8元1+1羲承套装（需补运费，无特典，获得羲承单封+随机一张共计两张）或是购买K4裸专（52元/50元），这样可以获得羲承专辑或者特典<br><a href="https://cn.ktown4u.com/eventsub?eve_no=6954375&biz_no=599">购买：K4</a><br><a href="https://weibo.com/u/3587556515">小鹿园wb</a>',
 				attribute1: "option2",
 				attribute2: "option2",
 				attribute3: "option1",
+                link: "https://weibo.com/u/3587556515"
 			},
             {
 				name:"你选择的是：60~100预算 羲承封面，羲承特典",
-				// image: "figs/sorry.png",
+				image: "pictures/engenecover.png",
                 description:'目前你有两种选择：<br>等待小鹿园x星河集美分批发售的98.8元1+1羲承套装（需补运费，无特典，获得羲承单封+随机一张共计两张）或是购买K4裸专（52元/50元），这样可以获得羲承专辑或者特典<br><a href="https://cn.ktown4u.com/eventsub?eve_no=6954375&biz_no=599">购买：K4</a><br><a href="https://weibo.com/u/3587556515">小鹿园wb</a>',
 				attribute1: "option2",
 				attribute2: "option2",
 				attribute3: "option2",
+                link: "https://weibo.com/u/3587556515"
 			},
             {
 				name:"你选择的,100元-200元预算 随机封面，随机特典",
-				// image: "figs/qr.JPG",
+				image: "pictures/full.jpg",
                 description:'看来你只是想支持一下羲承中输，太感谢啦！请点击<a href="https://cn.ktown4u.com/eventsub?eve_no=6954375&biz_no=599">K4随机裸专一本</a>' ,
 				attribute1: "option3",
 				attribute2: "option1",
 				attribute3: "option1",
+                link: "https://cn.ktown4u.com/eventsub?eve_no=6954375&biz_no=599"
 			},
 
             {
 				name:"你选择的,100元-200元预算 随机封面，羲承特典",
-				// image: "figs/kmsp11.JPG",
+				image: "pictures/engene.png",
                 description:'<br>请优先等待小鹿园x爱豆驿站分批发售的142元1+1特典套装，获得羲承单封+weverse羲承特典卡+weverse随机明信片，以及一套随机队友的配置<br><a href="https://weibo.com/u/3587556515">小鹿园wb</a><br>如果不想抢购也只想随便买一本，可以考虑购买<a href="https://cn.ktown4u.com/eventsub?eve_no=6954375&biz_no=599">K4随机裸专一本</a>' ,
 				attribute1: "option3",
 				attribute2: "option1",
 				attribute3: "option2",
+                link: "https://weibo.com/u/3587556515"
 			},
 
             {
 				name:"你选择的,100元-200元预算 羲承封面，随机特典",
-				// image: "figs/sorry.png",
+				image: "pictures/engenecover.png",
                 description:'<br>请优先等待小鹿园x爱豆驿站分批发售的142元1+1特典套装，获得羲承单封+weverse羲承特典卡+weverse随机明信片，以及一套随机队友的配置<br><a href="https://weibo.com/u/3587556515">小鹿园wb</a><br>如果不想抢购也只想随便买一本，可以考虑购买<a href="https://cn.ktown4u.com/eventsub?eve_no=6954375&biz_no=599">K4随机裸专一本</a>',
 				attribute1: "option3",
 				attribute2: "option2",
 				attribute3: "option1",
+                link: "https://weibo.com/u/3587556515"
 			},
 
   
             {
 				name:"你选择的,100元-200元预算 羲承封面，羲承特典",
-				// image: "figs/IZTP.JPG",
+				image: "pictures/engenecover.png",
                 description:'太好了！目前，你有了选择一些特典的空间。<br>请优先等待小鹿园x爱豆驿站分批发售的142元1+1特典套装，获得羲承单封+weverse羲承特典卡+weverse随机明信片，以及一套随机队友的配置<br><a href="https://weibo.com/u/3587556515">小鹿园wb</a><br>如果不想抢购，可以考虑在不要专辑的情况下购买K4不运回（可获得羲承拍立得和随机小卡），若需非羲承特典需要备注，或是赌一把随机封面<br>价格50元（不运回）/52元（运回，要补邮费）<br><a href="https://cn.ktown4u.com/eventsub?eve_no=6954375&biz_no=599">购买：K4</a>',
 				attribute1: "option3",
 				attribute2: "option2",
 				attribute3: "option2",
+                link: "https://weibo.com/u/3587556515"
 			},
 
             {
 				name:"你选择的,200元-400元预算 随机封面，随机特典",
-				// image: "figs/IZTP.JPG",
+				image: "pictures/full.png",
                 description:'看来你只是想支持一下羲承中输，太感谢啦！请点击<a href="https://cn.ktown4u.com/iteminfo?grp_no=1741898&fanc_goods_no=206170&goods_no=93862">K4写真集版套装</a>',
 				attribute1: "option4",
 				attribute2: "option1",
 				attribute3: "option1",
+                link: "https://cn.ktown4u.com/iteminfo?grp_no=1741898&fanc_goods_no=206170&goods_no=93862"
 			},
 
             {
 				name:"你选择的,200元-400元预算 随机封面，羲承特典",
-				// image: "figs/sorry.png",
+				image: "pictures/set.png",
                 description:'随机封面超easy，你不仅获得一本而是7本！请点击<a href="https://cn.ktown4u.com/iteminfo?grp_no=1741898&fanc_goods_no=206175&goods_no=93869">K4单封版套装</a>，稳稳获得羲承封面+羲承特典！',
 				attribute1: "option4",
 				attribute2: "option1",
 				attribute3: "option2",
+                link: "https://cn.ktown4u.com/iteminfo?grp_no=1741898&fanc_goods_no=206175&goods_no=93869"
 			},
             {
 				name:"你选择的,200元-400元预算 羲承封面，随机特典",
-				// image: "figs/sorry.png",
+				image: "pictures/set.png",
                 description:'随机特典超easy，你不仅获得1本而是7本！请点击<a href="https://cn.ktown4u.com/iteminfo?grp_no=1741898&fanc_goods_no=206175&goods_no=93869">K4单封版套装</a>，稳稳获得羲承封面+羲承特典！',
 				attribute1: "option4",
 				attribute2: "option2",
 				attribute3: "option1",
+                link: "https://cn.ktown4u.com/iteminfo?grp_no=1741898&fanc_goods_no=206175&goods_no=93869"
 			},
             {
 				name:"你选择的,200元-400元预算 羲承封面，羲承特典",
-				// image: "figs/all7.PNG",
+				image: "pictures/set.png",
                 description:'好耶！到了这个预算，你可以确定获得一整套专辑啦！<br><a href="https://cn.ktown4u.com/iteminfo?grp_no=1741898&fanc_goods_no=206175&goods_no=93869">羲承封面</a>：喜欢羲承封面的可以直接凑一套单封收藏，其中必定获得一张羲承的单封和拍立得<br><a href="https://cn.ktown4u.com/iteminfo?grp_no=1741898&fanc_goods_no=206170&goods_no=93862">随机：</a>喜欢设计味封面又想翻照片的可以选择PB版套装，可以获得暗月漫画相关的明信片',
 				attribute1: "option4",
 				attribute2: "option2",
 				attribute3: "option2",
+                link: "https://cn.ktown4u.com/iteminfo?grp_no=1741898&fanc_goods_no=206175&goods_no=93869"
 			},
 		];	
 
@@ -212,9 +210,10 @@
 					<div>
 						<p>${product.name}</p>
                         <p>${product.description}</p>
+                        <a href="${product.link}"><img src="${product.image}" style="max-width:80%;height:auto;margin:auto"></a>
                 </div>
 				`;
-                // <img src="${product.image}" alt="${product.name}" style="max-width:80%;height:auto;margin:auto">
+                
 			});
 
 			// Display the recommended products
