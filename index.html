@@ -19,7 +19,9 @@
     <hr>
 
     <div>
-        <img class="left-img"  src="pictures/header.jpg"  style="max-width:auto;height:auto;margin-left:0vw;margin-right:0vw">       
+        <div style="background-color:#b4b4b4;">
+            <img class="left-img"  src="pictures/header.jpg"  style="margin:10% auto;width:100%">       
+        </div> 
         <p><b>阅前须知：</b></p>
         <p class="image-text">&#x1F439;建议经验丰富西米露们仔细阅读，确认细节后再下单，避免产生不必要的损失！</p>
         <p class="image-text">&#x1F98C;其他问题可移步答疑群以及超话</p>
@@ -35,17 +37,17 @@
         <p>请选择：</p>
 		<label for="attribute1">预算:</label>
 		<input type="radio" id="attribute1_option1" name="attribute1" value="option1">
-		<label for="attribute1_option1">给我来一锤子的80</label>
+		<label for="attribute1_option1">60以下</label>
 		<input type="radio" id="attribute1_option2" name="attribute1" value="option2">
-		<label for="attribute1_option2">50-100</label>
+		<label for="attribute1_option2">60-100</label>
         <input type="radio" id="attribute1_option3" name="attribute1" value="option3">
 		<label for="attribute1_option3">100-200</label>
         <input type="radio" id="attribute1_option4" name="attribute1" value="option4">
-		<label for="attribute1_option4">200-300</label>
-        <input type="radio" id="attribute1_option5" name="attribute1" value="option5">
+		<label for="attribute1_option4">200-400</label>
+        <!-- <input type="radio" id="attribute1_option5" name="attribute1" value="option5">
 		<label for="attribute1_option5">400-500</label>
         <input type="radio" id="attribute1_option6" name="attribute1" value="option6">
-		<label for="attribute1_option6">600</label>
+		<label for="attribute1_option6">600</label> -->
 		</label>
         <br><br>
 
@@ -53,14 +55,14 @@
 		<input type="radio" id="attribute2_option1" name="attribute2" value="option1">
 		<label for="attribute2_option1">随机</label>
 		<input type="radio" id="attribute2_option2" name="attribute2" value="option2">
-		<label for="attribute2_option2">指定宁单人封</label>
+		<label for="attribute2_option2">指定羲承封面</label>
         <br><br>
 
 		<label for="attribute3">附加特典小卡:</label>
 		<input type="radio" id="attribute3_option1" name="attribute3" value="option1">
 		<label for="attribute3_option1">随机</label>
 		<input type="radio" id="attribute3_option2" name="attribute3" value="option2">
-		<label for="attribute3_option2">指定宁</label>
+		<label for="attribute3_option2">指定羲承特典</label>
 	    <br><br>
 		<input type="submit" value="提交" style = "font-size:2.0vw">
 	</form>
@@ -72,124 +74,114 @@
 	<script>
 		const products = [
 			{
-                name:"您选择的是，50元以下预算",
-                
-				image: "figs/maotiao.JPG",
-                description:'很可惜，少于50无法购买整张专辑，如果想为宁宁中输做贡献可以通过“一元猫条”的形式捐赠，宁吧将把捐款集合起来用于购买专辑: <a href="https://shop1696242574.v.weidian.com/item.html?itemID=6203121041&a=b&wfr=BuyercopyURL&distributorId=1667993222&share_relation=061e1f90d7752da0_1667993222_1&continueFlag=4dfadf612813c79efb5319bb0cce6e78">猫条购买链接</a>.以下是猫条的详细介绍： ',
-
+                name:"你选择了：60以下预算",                
+				// image: "pictures/header.JPG",
+                description:'很抱歉，预算60以下可能无法指定获得羲承单封，不过可以考虑赌一把K4裸专，或是选择在不要专辑的情况下购买K4不运回（可获得羲承拍立得和随机小卡）价格50元（不运回）/52元（运回，要补邮费） <a href="https://cn.ktown4u.com/eventsub?eve_no=6954375&biz_no=599">购买</a>。',
 				attribute1: "option1",
-				attribute2: "none",
+				attribute2: "option1",
 				attribute3: "none",
 			},
 			{
-				name: "您选择的是，50元-100元预算，随机封面，随机特典卡",
-				image: "figs/IZTP.JPG",
-                description:'50-100 之间的选项大多数以单张专辑为主，这里推荐P版和I版的专辑.  <br> P版（绿色）专辑46.5 RMB， I版（粉色）专辑60 RMB， （均不含运费） 他们的主要区别请见下图 <br> <a href="http://m.liveonepick.com/#/?productId=2e42667cebe341c392cb894a0452925d&continueFlag=4dfadf612813c79efb5319bb0cce6e78">P版购买链接</a>，<a href="https://cn.ktown4u.com/eventsub?eve_no=6833766&biz_no=599">I版购买链接</a>',
+				name: "你选择的是：60~100预算 随机封面，随机特典",
+				// image: "figs/IZTP.JPG",
+                description:'60~100元全随机可以直接在K4购买裸专一张，<a href="https://cn.ktown4u.com/iteminfo?grp_no=1741898&fanc_goods_no=206174&goods_no=93855">PB版（团体写真集版）</a>和<a href="https://cn.ktown4u.com/iteminfo?grp_no=1741898&fanc_goods_no=206183&goods_no=93858">单封版（随机成员封面）</a>均可购入',
 				attribute1: "option2",
 				attribute2: "option1",
 				attribute3: "option1",
 			},
 			{
-				name: "您选择的是，50元-100元预算，随机单人封面，随机特典卡",
-				image: "figs/ichai.PNG",
-                description:'这一档有两种选择：（1）不拆卡的单张I版专辑（2）拆卡的单张I版专辑  <br> 拆开与否的区别：不拆卡的专辑会所有内容原封不动地寄到您的手上，而拆卡的专辑会将cd拿走，剩下的图片和小卡寄给您。<br> 专辑的价格一样，都是60RMB，拆开的运费会便宜一些 <br> <a href="http://m.liveonepick.com/#/?productId=48ebf1ddd65947c3a54eec075a8a1547&continueFlag=4dfadf612813c79efb5319bb0cce6e78">不拆卡I版购买链接（星河）</a><br>  <a href="https://cn.ktown4u.com/eventsub?eve_no=6833766&biz_no=599">拆卡I版购买链接（k4）</a>',
+				name: "你选择的是：60~100预算 随机封面，羲承特典",
+				// image: "figs/ichai.PNG",
+                description:'目前你有两种选择：<br>等待小鹿园x星河集美分批发售的98.8元1+1羲承套装（需补运费，无特典，获得羲承单封+随机一张共计两张）或是购买K4裸专（52元/50元），这样可以获得羲承专辑或者特典<br><a href="https://cn.ktown4u.com/eventsub?eve_no=6954375&biz_no=599">购买：K4</a><br><a href="https://weibo.com/u/3587556515">小鹿园wb</a>',
 				attribute1: "option2",
 				attribute2: "option1",
 				attribute3: "option2",
 			},
 			{
-				name:"您选择的是，50元-100元预算，宁宁单人封面，指定宁宁特典卡",
-				image: "figs/sorry.png",
-                description:'抱歉，100元以下的选择似乎不能指定封面，可以尝试稍微提高预算来获得宁宁的单封，',
-				attribute1: "option2",
-				attribute2: "option2",
-				attribute3: "option2",
-			},
-            {
-				name:"您选择的是,50元-100元预算，宁宁单人封面，随机特典卡",
-				image: "figs/sorry.png",
-                description:'抱歉，100元以下的选择似乎不能指定封面，可以尝试稍微提高预算来获得宁宁的单封',
+				name:"你选择的是：60~100预算 羲承封面，随机特典",
+				// image: "figs/sorry.png",
+                description:'目前你有两种选择：<br>等待小鹿园x星河集美分批发售的98.8元1+1羲承套装（需补运费，无特典，获得羲承单封+随机一张共计两张）或是购买K4裸专（52元/50元），这样可以获得羲承专辑或者特典<br><a href="https://cn.ktown4u.com/eventsub?eve_no=6954375&biz_no=599">购买：K4</a><br><a href="https://weibo.com/u/3587556515">小鹿园wb</a>',
 				attribute1: "option2",
 				attribute2: "option2",
 				attribute3: "option1",
 			},
             {
-				name:"您选择的,100元-200元预算，随机封面，宁宁特典卡",
-				image: "figs/qr.JPG",
-                description:'这一套是I版1+1，有宁宁的自拍闪卡，非常好看，4月26日截止。售价126RMB（不含运费）<br> 扫码进入下图微信小程序，搜索宁艺卓，点击（1+1）的版本就是啦' ,
+				name:"你选择的是：60~100预算 羲承封面，羲承特典",
+				// image: "figs/sorry.png",
+                description:'目前你有两种选择：<br>等待小鹿园x星河集美分批发售的98.8元1+1羲承套装（需补运费，无特典，获得羲承单封+随机一张共计两张）或是购买K4裸专（52元/50元），这样可以获得羲承专辑或者特典<br><a href="https://cn.ktown4u.com/eventsub?eve_no=6954375&biz_no=599">购买：K4</a><br><a href="https://weibo.com/u/3587556515">小鹿园wb</a>',
+				attribute1: "option2",
+				attribute2: "option2",
+				attribute3: "option2",
+			},
+            {
+				name:"你选择的,100元-200元预算 随机封面，随机特典",
+				// image: "figs/qr.JPG",
+                description:'看来你只是想支持一下羲承中输，太感谢啦！请点击<a href="https://cn.ktown4u.com/eventsub?eve_no=6954375&biz_no=599">K4随机裸专一本</a>' ,
+				attribute1: "option3",
+				attribute2: "option1",
+				attribute3: "option1",
+			},
+
+            {
+				name:"你选择的,100元-200元预算 随机封面，羲承特典",
+				// image: "figs/kmsp11.JPG",
+                description:'<br>请优先等待小鹿园x爱豆驿站分批发售的142元1+1特典套装，获得羲承单封+weverse羲承特典卡+weverse随机明信片，以及一套随机队友的配置<br><a href="https://weibo.com/u/3587556515">小鹿园wb</a><br>如果不想抢购也只想随便买一本，可以考虑购买<a href="https://cn.ktown4u.com/eventsub?eve_no=6954375&biz_no=599">K4随机裸专一本</a>' ,
 				attribute1: "option3",
 				attribute2: "option1",
 				attribute3: "option2",
 			},
 
             {
-				name:"您选择的,100元-200元预算，指定宁单人封面，随机特典",
-				image: "figs/kmsp11.JPG",
-                description:'这一套是P版1+1，可以指定封面，但没有特典卡，售价112RMB <br> 购买链接请扫码下图' ,
+				name:"你选择的,100元-200元预算 羲承封面，随机特典",
+				// image: "figs/sorry.png",
+                description:'<br>请优先等待小鹿园x爱豆驿站分批发售的142元1+1特典套装，获得羲承单封+weverse羲承特典卡+weverse随机明信片，以及一套随机队友的配置<br><a href="https://weibo.com/u/3587556515">小鹿园wb</a><br>如果不想抢购也只想随便买一本，可以考虑购买<a href="https://cn.ktown4u.com/eventsub?eve_no=6954375&biz_no=599">K4随机裸专一本</a>',
 				attribute1: "option3",
 				attribute2: "option2",
 				attribute3: "option1",
-			},
-
-            {
-				name:"您选择的,100元-200元预算，随机封面，宁宁特典卡",
-				image: "figs/sorry.png",
-                description:'抱歉，200元以下的选择不能双指定呢，可以考虑只指定封面或者特典',
-				attribute1: "option3",
-				attribute2: "option2",
-				attribute3: "option2",
 			},
 
   
             {
-				name:"您选择的,200元-300元预算，随机封面，宁宁特典卡",
-				image: "figs/IZTP.JPG",
-                description:'推荐购买四种版本专辑各一张的全家福，1P随机+1I随机+1T+1Z随机 ， <br> 这一套适合喜欢收藏的同学，因为每个版本的封面和小卡都不一样，一套下来四张特典卡 <br> P版本售价223RMB，I版本售价282RMB <br> <a href="http://m.liveonepick.com/#/?productId=971b8e3a490249378f1db733f1b5a17b">IPTZ全家福购买链接（k4）</a> <br> 各个版本的区别请参考下图： ',
-				attribute1: "option4",
-				attribute2: "option1",
-				attribute3: "option2",
-			},
-
-            {
-				name:"您选择的,200元-300元预算，宁宁单人封面，宁宁特典卡",
-				image: "figs/IZTP.JPG",
-                description:'推荐购买4张P版专辑或者4张I版专辑，一次性购买四张会保证包含宁宁的单人封面，一套下来四张特典卡也一定会有宁，  <br> P版本售价223RMB，I版本售价282RMB <br> <a href="http://m.liveonepick.com/#/?productId=2e42667cebe341c392cb894a0452925d&continueFlag=4dfadf612813c79efb5319bb0cce6e78">P版本x4购买链接（k4）</a>, <a href="https://shop1696242574.v.weidian.com/item.html?itemID=6236690895&wfr=c&ifr=itemdetail&source=goods_home&sfr=app&continueFlag=4dfadf612813c79efb5319bb0cce6e78">I版本x4购买链接（k4）</a> <br> 两个版本的区别请参考下图： ',
-				attribute1: "option4",
+				name:"你选择的,100元-200元预算 羲承封面，羲承特典",
+				// image: "figs/IZTP.JPG",
+                description:'太好了！目前，你有了选择一些特典的空间。<br>请优先等待小鹿园x爱豆驿站分批发售的142元1+1特典套装，获得羲承单封+weverse羲承特典卡+weverse随机明信片，以及一套随机队友的配置<br><a href="https://weibo.com/u/3587556515">小鹿园wb</a><br>如果不想抢购，可以考虑在不要专辑的情况下购买K4不运回（可获得羲承拍立得和随机小卡），若需非羲承特典需要备注，或是赌一把随机封面<br>价格50元（不运回）/52元（运回，要补邮费）<br><a href="https://cn.ktown4u.com/eventsub?eve_no=6954375&biz_no=599">购买：K4</a>',
+				attribute1: "option3",
 				attribute2: "option2",
 				attribute3: "option2",
 			},
 
             {
-				name:"您选择的,200元-300元预算，随机封面， 随机特典卡",
-				image: "figs/sorry.png",
-                description:'这个价位一般都可以保证一定特典或者封面里至少包含一张宁宁的哦，请选择非随机的选项试试看 ',
+				name:"你选择的,200元-400元预算 随机封面，随机特典",
+				// image: "figs/IZTP.JPG",
+                description:'看来你只是想支持一下羲承中输，太感谢啦！请点击<a href="https://cn.ktown4u.com/iteminfo?grp_no=1741898&fanc_goods_no=206170&goods_no=93862">K4写真集版套装</a>',
 				attribute1: "option4",
 				attribute2: "option1",
 				attribute3: "option1",
 			},
+
             {
-				name:"您选择的,200元-300元预算，宁宁单人封面， 随机特典卡",
-				image: "figs/sorry.png",
-                description:'这个价位一般都可以保证一定特典里一定包含一张宁宁的哦，请选择非随机的选项试试看 ',
+				name:"你选择的,200元-400元预算 随机封面，羲承特典",
+				// image: "figs/sorry.png",
+                description:'随机封面超easy，你不仅获得一本而是7本！请点击<a href="https://cn.ktown4u.com/iteminfo?grp_no=1741898&fanc_goods_no=206175&goods_no=93869">K4单封版套装</a>，稳稳获得羲承封面+羲承特典！',
+				attribute1: "option4",
+				attribute2: "option1",
+				attribute3: "option2",
+			},
+            {
+				name:"你选择的,200元-400元预算 羲承封面，随机特典",
+				// image: "figs/sorry.png",
+                description:'随机特典超easy，你不仅获得1本而是7本！请点击<a href="https://cn.ktown4u.com/iteminfo?grp_no=1741898&fanc_goods_no=206175&goods_no=93869">K4单封版套装</a>，稳稳获得羲承封面+羲承特典！',
 				attribute1: "option4",
 				attribute2: "option2",
 				attribute3: "option1",
 			},
             {
-				name:"您选择的,400元-500元预算，宁宁单人封面， 宁宁特典卡",
-				image: "figs/all7.PNG",
-                description:'恭喜你， 这个价格可以一键毕业啦。 <br> 一键毕业包含七本， 4张I（4个成员单封），2张Z（两种图封），1张T（团封） <br> 毕业指的是：可以拥有三个版本专辑的所有封面！还会有超多特典卡哦。售价415-418 RMB（不含运费） <br> <a href="http://m.liveonepick.com/#/?productId=1683f988a224482897f022edd369b651&continueFlag=4dfadf612813c79efb5319bb0cce6e78">ITZ一键毕业购买链接</a>',
-				attribute1: "option5",
-				attribute2: "none",
-				attribute3: "none",
-			},
-            {
-				name:"您选择的,600元预算，宁宁单人封面， 宁宁特典卡",
-				image: "figs/all11.JPG",
-                description:'恭喜你， 这个价格可以一键毕业啦。 <br> 一键毕业包含11本， 4张I（4个成员单封），4张P（4个成员单封），2张Z（两种图封），1张T（团封） <br> 毕业指的是：可以拥有所有版本专辑的所有封面！还会有10张特典卡哦。售价601.5 RMB（不含运费） <br> <a href="http://m.liveonepick.com/#/?productId=be578f445b024b3093f9bcc62969953c&continueFlag=4dfadf612813c79efb5319bb0cce6e78">11本一键毕业购买链接</a>',
-				attribute1: "option6",
-				attribute2: "none",
-				attribute3: "none",
+				name:"你选择的,200元-400元预算 羲承封面，羲承特典",
+				// image: "figs/all7.PNG",
+                description:'好耶！到了这个预算，你可以确定获得一整套专辑啦！<br><a href="https://cn.ktown4u.com/iteminfo?grp_no=1741898&fanc_goods_no=206175&goods_no=93869">羲承封面</a>：喜欢羲承封面的可以直接凑一套单封收藏，其中必定获得一张羲承的单封和拍立得<br><a href="https://cn.ktown4u.com/iteminfo?grp_no=1741898&fanc_goods_no=206170&goods_no=93862">随机：</a>喜欢设计味封面又想翻照片的可以选择PB版套装，可以获得暗月漫画相关的明信片',
+				attribute1: "option4",
+				attribute2: "option2",
+				attribute3: "option2",
 			},
 		];	
 
@@ -220,11 +212,9 @@
 					<div>
 						<p>${product.name}</p>
                         <p>${product.description}</p>
-						<img src="${product.image}" alt="${product.name}" style="max-width:80%;height:auto;margin:auto">
-
                 </div>
-
 				`;
+                // <img src="${product.image}" alt="${product.name}" style="max-width:80%;height:auto;margin:auto">
 			});
 
 			// Display the recommended products
@@ -251,11 +241,31 @@
             // }
         }
         
+        // function modifyText1() {
+        //     const val1 = document.getElementById("attribute1_option1");
+
+        //     if (val1.checked) {
+        //         document.getElementById("attribute2_option1").disabled = true;
+        //         document.getElementById("attribute2_option2").disabled = true;
+        //         document.getElementById("attribute3_option1").disabled = true;
+        //         document.getElementById("attribute3_option2").disabled = true;
+        //     } else {
+        //         document.getElementById("attribute2_option1").disabled = false;
+        //         document.getElementById("attribute2_option2").disabled = false;
+        //         document.getElementById("attribute3_option1").disabled = false;
+        //         document.getElementById("attribute3_option2").disabled = false;
+        //     }
+        // }
+
+
+        //AAAA
         function modifyText1() {
             const val1 = document.getElementById("attribute1_option1");
 
             if (val1.checked) {
-                document.getElementById("attribute2_option1").disabled = true;
+                // document.getElementById("attribute2_option1").disabled = false;
+                document.getElementById("attribute2_option2").disabled = false;
+                document.getElementById("attribute2_option1").checked = true;
                 document.getElementById("attribute2_option2").disabled = true;
                 document.getElementById("attribute3_option1").disabled = true;
                 document.getElementById("attribute3_option2").disabled = true;
@@ -344,7 +354,10 @@
         }
 
 
-        const el1 = document.getElementById("attribute1_option1") ;
+        // const el1 = document.getElementById("attribute1_option1") ;
+        // el1.addEventListener("click", modifyText1);
+        
+        const el1 = document.getElementById("attribute1_option1")
         el1.addEventListener("click", modifyText1);
 
         const el2 = document.getElementById("attribute1_option2");
@@ -356,12 +369,14 @@
         const el4 = document.getElementById("attribute1_option4");
         el4.addEventListener("click", modifyText4);
 
-        const el5 = document.getElementById("attribute1_option5");
-        el5.addEventListener("click", modifyText5);
+        // const el5 = document.getElementById("attribute1_option5");
+        // el5.addEventListener("click", modifyText5);
 
-        const el6 = document.getElementById("attribute1_option6");
-        el6.addEventListener("click", modifyText6);
+        // const el6 = document.getElementById("attribute1_option6");
+        // el6.addEventListener("click", modifyText6);
         
+        //AAAA
+
 
         // document.getElementById("ResponseSaidCBY").onchange = clickYes;
         // document.getElementById("ResponseSaidCBN").onchange = clickNo;
@@ -386,7 +401,8 @@ a:hover {
 }
 
 body {
-    max-width: 800px;
+    /* max-width: 800px; */
+    width:85%;
     margin: auto;
     padding-left: 2vw;
     padding-right: 2vw;
@@ -443,8 +459,8 @@ span.highlight {
 }
 
 .left-img {
-    float: left;
-    margin-right: 0.5vw;
+    /* float: left; */
+    /* margin-right: 0.5vw; */
       }
       
 .image-text {
