@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</header>
+    
+<head>
+    <title>专辑购买指南</title>
+    <style>
+        [disabled] {
+        color: gray;
+        }
+    </style>
+    </head>
+<body>
+    <br><br>
+    <br><br>
+
+    
+    <h1>   &#x1F9E1; 感谢宝宝支持宁宁的新MINI3专辑《My World》! &#127868;&#128568;&#x1F9E1;</h1>
+    <h1>    &#x1F495;请根据以下标准挑选最适合你的专辑购买方案吧&#x1F495;</h1>
+    <hr>
+
+    <div>
+        <img class="left-img"  src="figs/teaser.JPG"  style="max-width:30%;height:auto;margin-left:0vw;margin-right:2vw">       
+        <p>  <b>阅前须知：</b></p>
+        <p class="image-text">   &#128064;本页信息有限，建议下单前和有经验的宁妈妈先确认细节，以防错买！</p>
+        <p class="image-text">   &#128064;更多问题请移步宁艺卓微博超话，有热情宁妈随时随地详细解答</p>
+        <p class="image-text">   &#x1F48C;如果本页内容有错误/需要添加，请联系微博@少吃一块饼干</p>
+    </div>
+
+
+ 	<form>
+        <br><br>
+
+        <hr>
+
+        <p>请选择：</p>
+		<label for="attribute1">预算:</label>
+		<input type="radio" id="attribute1_option1" name="attribute1" value="option1">
+		<label for="attribute1_option1">给我来一锤子的80</label>
+		<input type="radio" id="attribute1_option2" name="attribute1" value="option2">
+		<label for="attribute1_option2">50-100</label>
+        <input type="radio" id="attribute1_option3" name="attribute1" value="option3">
+		<label for="attribute1_option3">100-200</label>
+        <input type="radio" id="attribute1_option4" name="attribute1" value="option4">
+		<label for="attribute1_option4">200-300</label>
+        <input type="radio" id="attribute1_option5" name="attribute1" value="option5">
+		<label for="attribute1_option5">400-500</label>
+        <input type="radio" id="attribute1_option6" name="attribute1" value="option6">
+		<label for="attribute1_option6">600</label>
+		</label>
+        <br><br>
+
+		<label for="attribute2">指定封面:</label>
+		<input type="radio" id="attribute2_option1" name="attribute2" value="option1">
+		<label for="attribute2_option1">随机</label>
+		<input type="radio" id="attribute2_option2" name="attribute2" value="option2">
+		<label for="attribute2_option2">指定宁单人封</label>
+        <br><br>
+
+		<label for="attribute3">附加特典小卡:</label>
+		<input type="radio" id="attribute3_option1" name="attribute3" value="option1">
+		<label for="attribute3_option1">随机</label>
+		<input type="radio" id="attribute3_option2" name="attribute3" value="option2">
+		<label for="attribute3_option2">指定宁</label>
+	    <br><br>
+		<input type="submit" value="提交" style = "font-size:2.0vw">
+	</form>
+
+	<div id="recommended-products">
+		<!-- Display the recommended products here -->
+	</div>
+</body>
+	<script>
+		const products = [
+			{
+                name:"您选择的是，50元以下预算",
+                
+				image: "figs/maotiao.JPG",
+                description:'很可惜，少于50无法购买整张专辑，如果想为宁宁中输做贡献可以通过“一元猫条”的形式捐赠，宁吧将把捐款集合起来用于购买专辑: <a href="https://shop1696242574.v.weidian.com/item.html?itemID=6203121041&a=b&wfr=BuyercopyURL&distributorId=1667993222&share_relation=061e1f90d7752da0_1667993222_1&continueFlag=4dfadf612813c79efb5319bb0cce6e78">猫条购买链接</a>.以下是猫条的详细介绍： ',
+
+				attribute1: "option1",
+				attribute2: "none",
+				attribute3: "none",
+			},
+			{
+				name: "您选择的是，50元-100元预算，随机封面，随机特典卡",
+				image: "figs/IZTP.JPG",
+                description:'50-100 之间的选项大多数以单张专辑为主，这里推荐P版和I版的专辑.  <br> P版（绿色）专辑46.5 RMB， I版（粉色）专辑60 RMB， （均不含运费） 他们的主要区别请见下图 <br> <a href="http://m.liveonepick.com/#/?productId=2e42667cebe341c392cb894a0452925d&continueFlag=4dfadf612813c79efb5319bb0cce6e78">P版购买链接</a>，<a href="https://cn.ktown4u.com/eventsub?eve_no=6833766&biz_no=599">I版购买链接</a>',
+				attribute1: "option2",
+				attribute2: "option1",
+				attribute3: "option1",
+			},
+			{
+				name: "您选择的是，50元-100元预算，随机单人封面，随机特典卡",
+				image: "figs/ichai.PNG",
+                description:'这一档有两种选择：（1）不拆卡的单张I版专辑（2）拆卡的单张I版专辑  <br> 拆开与否的区别：不拆卡的专辑会所有内容原封不动地寄到您的手上，而拆卡的专辑会将cd拿走，剩下的图片和小卡寄给您。<br> 专辑的价格一样，都是60RMB，拆开的运费会便宜一些 <br> <a href="http://m.liveonepick.com/#/?productId=48ebf1ddd65947c3a54eec075a8a1547&continueFlag=4dfadf612813c79efb5319bb0cce6e78">不拆卡I版购买链接（星河）</a><br>  <a href="https://cn.ktown4u.com/eventsub?eve_no=6833766&biz_no=599">拆卡I版购买链接（k4）</a>',
+				attribute1: "option2",
+				attribute2: "option1",
+				attribute3: "option2",
+			},
+			{
+				name:"您选择的是，50元-100元预算，宁宁单人封面，指定宁宁特典卡",
+				image: "figs/sorry.png",
+                description:'抱歉，100元以下的选择似乎不能指定封面，可以尝试稍微提高预算来获得宁宁的单封，',
+				attribute1: "option2",
+				attribute2: "option2",
+				attribute3: "option2",
+			},
+            {
+				name:"您选择的是,50元-100元预算，宁宁单人封面，随机特典卡",
+				image: "figs/sorry.png",
+                description:'抱歉，100元以下的选择似乎不能指定封面，可以尝试稍微提高预算来获得宁宁的单封',
+				attribute1: "option2",
+				attribute2: "option2",
+				attribute3: "option1",
+			},
+            {
+				name:"您选择的,100元-200元预算，随机封面，宁宁特典卡",
+				image: "figs/qr.JPG",
+                description:'这一套是I版1+1，有宁宁的自拍闪卡，非常好看，4月26日截止。售价126RMB（不含运费）<br> 扫码进入下图微信小程序，搜索宁艺卓，点击（1+1）的版本就是啦' ,
+				attribute1: "option3",
+				attribute2: "option1",
+				attribute3: "option2",
+			},
+
+            {
+				name:"您选择的,100元-200元预算，指定宁单人封面，随机特典",
+				image: "figs/kmsp11.JPG",
+                description:'这一套是P版1+1，可以指定封面，但没有特典卡，售价112RMB <br> 购买链接请扫码下图' ,
+				attribute1: "option3",
+				attribute2: "option2",
+				attribute3: "option1",
+			},
+
+            {
+				name:"您选择的,100元-200元预算，随机封面，宁宁特典卡",
+				image: "figs/sorry.png",
+                description:'抱歉，200元以下的选择不能双指定呢，可以考虑只指定封面或者特典',
+				attribute1: "option3",
+				attribute2: "option2",
+				attribute3: "option2",
+			},
+
+  
+            {
+				name:"您选择的,200元-300元预算，随机封面，宁宁特典卡",
+				image: "figs/IZTP.JPG",
+                description:'推荐购买四种版本专辑各一张的全家福，1P随机+1I随机+1T+1Z随机 ， <br> 这一套适合喜欢收藏的同学，因为每个版本的封面和小卡都不一样，一套下来四张特典卡 <br> P版本售价223RMB，I版本售价282RMB <br> <a href="http://m.liveonepick.com/#/?productId=971b8e3a490249378f1db733f1b5a17b">IPTZ全家福购买链接（k4）</a> <br> 各个版本的区别请参考下图： ',
+				attribute1: "option4",
+				attribute2: "option1",
+				attribute3: "option2",
+			},
+
+            {
+				name:"您选择的,200元-300元预算，宁宁单人封面，宁宁特典卡",
+				image: "figs/IZTP.JPG",
+                description:'推荐购买4张P版专辑或者4张I版专辑，一次性购买四张会保证包含宁宁的单人封面，一套下来四张特典卡也一定会有宁，  <br> P版本售价223RMB，I版本售价282RMB <br> <a href="http://m.liveonepick.com/#/?productId=2e42667cebe341c392cb894a0452925d&continueFlag=4dfadf612813c79efb5319bb0cce6e78">P版本x4购买链接（k4）</a>, <a href="https://shop1696242574.v.weidian.com/item.html?itemID=6236690895&wfr=c&ifr=itemdetail&source=goods_home&sfr=app&continueFlag=4dfadf612813c79efb5319bb0cce6e78">I版本x4购买链接（k4）</a> <br> 两个版本的区别请参考下图： ',
+				attribute1: "option4",
+				attribute2: "option2",
+				attribute3: "option2",
+			},
+
+            {
+				name:"您选择的,200元-300元预算，随机封面， 随机特典卡",
+				image: "figs/sorry.png",
+                description:'这个价位一般都可以保证一定特典或者封面里至少包含一张宁宁的哦，请选择非随机的选项试试看 ',
+				attribute1: "option4",
+				attribute2: "option1",
+				attribute3: "option1",
+			},
+            {
+				name:"您选择的,200元-300元预算，宁宁单人封面， 随机特典卡",
+				image: "figs/sorry.png",
+                description:'这个价位一般都可以保证一定特典里一定包含一张宁宁的哦，请选择非随机的选项试试看 ',
+				attribute1: "option4",
+				attribute2: "option2",
+				attribute3: "option1",
+			},
+            {
+				name:"您选择的,400元-500元预算，宁宁单人封面， 宁宁特典卡",
+				image: "figs/all7.PNG",
+                description:'恭喜你， 这个价格可以一键毕业啦。 <br> 一键毕业包含七本， 4张I（4个成员单封），2张Z（两种图封），1张T（团封） <br> 毕业指的是：可以拥有三个版本专辑的所有封面！还会有超多特典卡哦。售价415-418 RMB（不含运费） <br> <a href="http://m.liveonepick.com/#/?productId=1683f988a224482897f022edd369b651&continueFlag=4dfadf612813c79efb5319bb0cce6e78">ITZ一键毕业购买链接</a>',
+				attribute1: "option5",
+				attribute2: "none",
+				attribute3: "none",
+			},
+            {
+				name:"您选择的,600元预算，宁宁单人封面， 宁宁特典卡",
+				image: "figs/all11.JPG",
+                description:'恭喜你， 这个价格可以一键毕业啦。 <br> 一键毕业包含11本， 4张I（4个成员单封），4张P（4个成员单封），2张Z（两种图封），1张T（团封） <br> 毕业指的是：可以拥有所有版本专辑的所有封面！还会有10张特典卡哦。售价601.5 RMB（不含运费） <br> <a href="http://m.liveonepick.com/#/?productId=be578f445b024b3093f9bcc62969953c&continueFlag=4dfadf612813c79efb5319bb0cce6e78">11本一键毕业购买链接</a>',
+				attribute1: "option6",
+				attribute2: "none",
+				attribute3: "none",
+			},
+		];	
+
+		// Add an event listener to the form submit button
+		const form = document.querySelector("form");
+		form.addEventListener("submit", function(event) {
+			event.preventDefault(); // Prevent the form from submitting
+
+			// Get the selected attribute values
+			const attribute1 = document.querySelector("input[name='attribute1']");
+			const attribute2 = document.querySelector("input[name='attribute2']");
+			const attribute3 = document.querySelector("input[name='attribute3']");
+            const attribute1_check = document.querySelector("input[name='attribute1']:checked");
+			const attribute2_check = document.querySelector("input[name='attribute2']:checked");
+			const attribute3_check = document.querySelector("input[name='attribute3']:checked");
+            const att1 = attribute1.disabled || attribute1_check == null ? "none" : attribute1_check.value;
+            const att2 = attribute2.disabled || attribute2_check == null ? "none" : attribute2_check.value;
+            const att3 = attribute3.disabled || attribute3_check == null ? "none" : attribute3_check.value;
+
+			const filteredProducts = products.filter(function(product) {
+				return product.attribute1 === att1 && product.attribute2 === att2 && product.attribute3 === att3;
+			});
+
+			// Create the HTML to display the recommended products
+			let recommendedProductsHTML = "";
+			filteredProducts.forEach(function(product) {
+				recommendedProductsHTML += `
+					<div>
+						<p>${product.name}</p>
+                        <p>${product.description}</p>
+						<img src="${product.image}" alt="${product.name}" style="max-width:80%;height:auto;margin:auto">
+
+                </div>
+
+				`;
+			});
+
+			// Display the recommended products
+			const recommendedProductsContainer = document.querySelector("#recommended-products");
+			recommendedProductsContainer.innerHTML = recommendedProductsHTML;
+		});
+
+
+        function clickYes() {
+            if (document.getElementById("ResponseSaidCBN").checked) {
+                document.getElementById("ResponseSaidCBN").checked = false;
+            }
+            // if (document.getElementById("ResponseSaidCBY").checked) {
+            //     document.getElementById("ResponseSaidOpt1").disabled = true;
+            // }
+        }
+        
+        function clickNo() {
+            if (document.getElementById("ResponseSaidCBY").checked) {
+                document.getElementById("ResponseSaidCBY").checked = false;
+            }
+            // if (document.getElementById("ResponseSaidCBN").checked) {
+            //     document.getElementById("ResponseSaidOpt1").disabled = false;
+            // }
+        }
+        
+        function modifyText1() {
+            const val1 = document.getElementById("attribute1_option1");
+
+            if (val1.checked) {
+                document.getElementById("attribute2_option1").disabled = true;
+                document.getElementById("attribute2_option2").disabled = true;
+                document.getElementById("attribute3_option1").disabled = true;
+                document.getElementById("attribute3_option2").disabled = true;
+            } else {
+                document.getElementById("attribute2_option1").disabled = false;
+                document.getElementById("attribute2_option2").disabled = false;
+                document.getElementById("attribute3_option1").disabled = false;
+                document.getElementById("attribute3_option2").disabled = false;
+            }
+        }
+
+        function modifyText2() {
+            const val1 = document.getElementById("attribute1_option2");
+
+            if (val1.checked) {
+                document.getElementById("attribute2_option1").disabled = false;
+                document.getElementById("attribute2_option2").disabled = false;
+                document.getElementById("attribute3_option1").disabled = false;
+                document.getElementById("attribute3_option2").disabled = false;
+            }
+        }
+
+
+        function modifyText3() {
+            const val1 = document.getElementById("attribute1_option3");
+
+            if (val1.checked) {
+                document.getElementById("attribute2_option1").disabled = false;
+                document.getElementById("attribute2_option2").disabled = false;
+                document.getElementById("attribute3_option1").disabled = false;
+                document.getElementById("attribute3_option2").disabled = false;
+            } else {
+                document.getElementById("attribute2_option1").disabled = false;
+                document.getElementById("attribute2_option2").disabled = false;
+                document.getElementById("attribute3_option1").disabled = false;
+                document.getElementById("attribute3_option2").disabled = false;
+            }
+        }
+
+        function modifyText4() {
+            const val1 = document.getElementById("attribute1_option4");
+            if (val1.checked) {
+                document.getElementById("attribute2_option1").disabled = false;
+                document.getElementById("attribute2_option2").disabled = false;
+                document.getElementById("attribute3_option1").disabled = false;
+                document.getElementById("attribute3_option2").disabled = false;
+            } else {
+                document.getElementById("attribute2_option1").disabled = false;
+                document.getElementById("attribute2_option2").disabled = false;
+                document.getElementById("attribute3_option1").disabled = false;
+                document.getElementById("attribute3_option2").disabled = false;
+            }
+        }
+
+        function modifyText5() {
+            const val1 = document.getElementById("attribute1_option5");
+            if (val1.checked) {
+                document.getElementById("attribute2_option1").disabled = true;
+                document.getElementById("attribute2_option2").disabled = false;
+                document.getElementById("attribute3_option1").disabled = true;
+                document.getElementById("attribute3_option2").disabled = false;
+
+            } else {
+                document.getElementById("attribute2_option1").disabled = false;
+                document.getElementById("attribute2_option2").disabled = false;
+                document.getElementById("attribute3_option1").disabled = false;
+                document.getElementById("attribute3_option2").disabled = false;
+            }
+        }
+
+        function modifyText6() {
+            const val1 = document.getElementById("attribute1_option6");
+            if (val1.checked) {
+                document.getElementById("attribute2_option1").disabled = true;
+                document.getElementById("attribute2_option2").disabled = false;
+                document.getElementById("attribute3_option1").disabled = true;
+                document.getElementById("attribute3_option2").disabled = false;
+
+            } else {
+                document.getElementById("attribute2_option1").disabled = false;
+                document.getElementById("attribute2_option2").disabled = false;
+                document.getElementById("attribute3_option1").disabled = false;
+                document.getElementById("attribute3_option2").disabled = false;
+
+            }
+        }
+
+
+        const el1 = document.getElementById("attribute1_option1") ;
+        el1.addEventListener("click", modifyText1);
+
+        const el2 = document.getElementById("attribute1_option2");
+        el2.addEventListener("click", modifyText2);
+
+        const el3 = document.getElementById("attribute1_option3");
+        el3.addEventListener("click", modifyText3);
+
+        const el4 = document.getElementById("attribute1_option4");
+        el4.addEventListener("click", modifyText4);
+
+        const el5 = document.getElementById("attribute1_option5");
+        el5.addEventListener("click", modifyText5);
+
+        const el6 = document.getElementById("attribute1_option6");
+        el6.addEventListener("click", modifyText6);
+        
+
+        // document.getElementById("ResponseSaidCBY").onchange = clickYes;
+        // document.getElementById("ResponseSaidCBN").onchange = clickNo;
+
+    </script>
+
+
+
+</html>
+
+
+<style>
+a {
+  color: #1772d0;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: #f09228;
+  text-decoration: none;
+}
+
+body {
+    max-width: 800px;
+    margin: auto;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+body,
+td,
+th,
+tr,
+p,
+a {
+  font-family: Verdana, Helvetica, sans-serif;
+  font-size: calc(8px + 1.0vw)
+}
+
+h1 {
+  font-family: Verdana, Helvetica, sans-serif;
+  font-size: calc(12px + 1.5vw);
+}
+
+name {
+  font-family: Verdana, Helvetica, sans-serif;
+  font-size: 32px;
+}
+
+.one {
+  width: 160px;
+  height: 160px;
+  position: relative;
+}
+
+.two {
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
+}
+
+.fade {
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
+}
+
+span.highlight {
+  font-family: Verdana, Helvetica, sans-serif;
+  background-color: #ffffd0;
+}
+
+.small {
+  font-size: 0.8vw;
+}
+
+.left-img {
+    float: left;
+    margin-right: 0.5vw;
+      }
+      
+.image-text {
+  margin-left: 0.5vw;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+input[type=submit] {
+    width: calc(30px + 5.0vw);  height: calc(30px + 2.5vw);
+}
+</style>
