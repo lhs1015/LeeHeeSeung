@@ -2,439 +2,381 @@
 <html>
 <header>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="common.css">
 </header>
-    
+
 <head>
     <title>专辑购买指南</title>
 </head>
-<body style="background-color:#b4b4b4;width:88%;margin:auto">
+
+<body>
+    <header>
+        <header>
+            <nav>
+                <div style="margin:3vw auto;width: 88%;">
+                    <p style="margin: auto;text-align: center;">
+                        <a href="index.html" class="large">预算导购</a>&nbsp;&nbsp;
+                        <a href="bonus.html" class="large">特典合集</a>
+                    </p>
+                </div>
+            </nav>
+        </header>
+    </header>
     <br>
+    <div>
+        <img src="pictures/header.jpg" style="width: 100%;">
+    </div>
     <h1>李羲承MINI4 Dark Blood购买指南 </h1>
     <div>
-        <img src="pictures/header.jpg"  style="width:100%">       
         <p><b>阅前须知：</b></p>
         <p>&#x1F439;建议可爱的西米露们仔细阅读，确认细节后再下单，避免产生不必要的损失！</p>
-        <p>&#x1F98C;其他问题可移步<a href="http://t.cn/A69uDg87">答疑群</a>以及<a href="https://weibo.com/p/1008081dcc563b60d9ee5369a74c2241c6001c_-_feed">超话</a></p>
+        <p>&#x1F98C;其他问题可移步<a href="http://t.cn/A69uDg87">答疑群</a>以及<a
+                href="https://weibo.com/p/1008081dcc563b60d9ee5369a74c2241c6001c_-_feed">超话</a></p>
         <p>&#x1F97A;内容有误欢迎大家及时指出</p>
-	<details>
-            <summary>特典解读一图流</summary>
-            <img src="pictures/pob.jpg" alt="一图流" style="width:100%">
-        </details>
     </div>
     <hr>
- 	<form>
+    <form>
         <p>请选择：</p>
-		<label for="attribute1">预算:</label>
-		<input type="radio" id="attribute1_option1" name="attribute1" value="option1">
-		<label for="attribute1_option1">60以下</label>
-		<input type="radio" id="attribute1_option2" name="attribute1" value="option2">
-		<label for="attribute1_option2">60-100</label>
+        <label for="attribute1">预算:</label>
+        <input type="radio" id="attribute1_option1" name="attribute1" value="option1">
+        <label for="attribute1_option1">60以下</label>
+        <input type="radio" id="attribute1_option2" name="attribute1" value="option2">
+        <label for="attribute1_option2">60-100</label>
         <input type="radio" id="attribute1_option3" name="attribute1" value="option3">
-		<label for="attribute1_option3">100-200</label>
+        <label for="attribute1_option3">100-200</label>
         <input type="radio" id="attribute1_option4" name="attribute1" value="option4">
-		<label for="attribute1_option4">200-400</label>
-		<br>
+        <label for="attribute1_option4">200-400</label>
+        <br>
         <input type="radio" id="attribute1_option5" name="attribute1" value="option5">
-		<label for="attribute1_option5">400-600</label>
+        <label for="attribute1_option5">400-600</label>
         <input type="radio" id="attribute1_option6" name="attribute1" value="option6">
-		<label for="attribute1_option6">600元以上</label>
+        <label for="attribute1_option6">600元以上</label>
         <br><br>
 
-		<label for="attribute2">指定封面:</label>
-		<input type="radio" id="attribute2_option1" name="attribute2" value="option1">
-		<label for="attribute2_option1">随机</label>
-		<input type="radio" id="attribute2_option2" name="attribute2" value="option2">
-		<label for="attribute2_option2">指定羲承封面</label>
+        <label for="attribute2">指定封面:</label>
+        <input type="radio" id="attribute2_option1" name="attribute2" value="option1">
+        <label for="attribute2_option1">随机</label>
+        <input type="radio" id="attribute2_option2" name="attribute2" value="option2">
+        <label for="attribute2_option2">指定羲承封面</label>
         <br><br>
 
-		<label for="attribute3">附加特典小卡:</label>
-		<input type="radio" id="attribute3_option1" name="attribute3" value="option1">
-		<label for="attribute3_option1">随机</label>
-		<input type="radio" id="attribute3_option2" name="attribute3" value="option2">
-		<label for="attribute3_option2">指定羲承特典</label>
-	    <br><br>
-		<input type="submit" value="提交" style = "display:block;margin:auto;font-size:2.5vw">
-	</form>
+        <label for="attribute3">附加特典小卡:</label>
+        <input type="radio" id="attribute3_option1" name="attribute3" value="option1">
+        <label for="attribute3_option1">随机</label>
+        <input type="radio" id="attribute3_option2" name="attribute3" value="option2">
+        <label for="attribute3_option2">指定羲承特典</label>
+        <br><br>
+        <input type="submit" value="提交" style="display:block;margin:auto;font-size:2.5vw">
+    </form>
 
-	<div id="recommendation">
-		<!-- recommendation -->
-	</div>
+    <div id="recommendation">
+        <!-- recommendation -->
+    </div>
 </body>
-	<script>
-		const recommendations = [
-			{
-                name:"你选择了：60以下预算",                
-				image: "pictures/engene.png",
-                description:'很抱歉，预算60以下可能无法指定获得羲承单封，不过可以考虑赌一把K4裸专，或是选择在不要专辑的情况下购买K4不运回（可获得羲承拍立得和随机小卡）价格50元（不运回）/52元（运回，要补邮费） <a href="https://cn.ktown4u.com/eventsub?eve_no=6954375&biz_no=599">购买</a>。',
-				attribute1: "option1",
-				attribute2: "option1",
-				attribute3: "none",
-                link: "https://cn.ktown4u.com/eventsub?eve_no=6954375&biz_no=599"
-			},
-			{
-				name: "你选择的是：60~100预算 随机封面，随机特典",
-				image: "pictures/full.jpg",
-                description:'60~100元全随机可以直接在K4购买裸专一张，<a href="https://cn.ktown4u.com/iteminfo?grp_no=1741898&fanc_goods_no=206174&goods_no=93855">PB版（团体写真集版）</a>和<a href="https://cn.ktown4u.com/iteminfo?grp_no=1741898&fanc_goods_no=206183&goods_no=93858">单封版（随机成员封面）</a>均可购入',
-				attribute1: "option2",
-				attribute2: "option1",
-				attribute3: "option1",
-                link: "https://cn.ktown4u.com/eventsub?eve_no=6954375&biz_no=599",
-			},
-			{
-				name: "你选择的是：60~100预算 随机封面，羲承特典",
-				image: "pictures/engene.png",
-                description:'目前你有两种选择：<br>实体专辑高于一切，请等待小鹿园x星河集美分批发售的98.8元1+1羲承套装（需补运费，无特典，获得羲承单封+随机一张共计两张）；更喜欢羲承小卡，请购买K4裸专（52元/50元），这样可以获得羲承专辑或者羲承特典二选一<br><a href="https://cn.ktown4u.com/eventsub?eve_no=6954375&biz_no=599">购买：K4</a><br><a href="https://weibo.com/u/3587556515">小鹿园wb</a>',
-				attribute1: "option2",
-				attribute2: "option1",
-				attribute3: "option2",
-                link: "https://cn.ktown4u.com/eventsub?eve_no=6954375&biz_no=599"
-			},
-			{
-				name:"你选择的是：60~100预算 羲承封面，随机特典",
-				image: "pictures/engenecover.png",
-                description:'目前你有两种选择：<br>等待小鹿园x星河集美分批发售的98.8元1+1羲承套装（需补运费，无特典，获得羲承单封+随机一张共计两张）或是购买K4裸专（52元/50元），这样可以获得羲承专辑或者特典<br><a href="https://cn.ktown4u.com/eventsub?eve_no=6954375&biz_no=599">购买：K4</a><br><a href="https://weibo.com/u/3587556515">小鹿园wb</a>',
-				attribute1: "option2",
-				attribute2: "option2",
-				attribute3: "option1",
-                link: "https://weibo.com/u/3587556515"
-			},
-            {
-				name:"你选择的是：60~100预算 羲承封面，羲承特典",
-				image: "pictures/engenecover.png",
-                description:'这个预算双指定有点难！目前你有两种选择：<br>等待小鹿园x星河集美分批发售的98.8元1+1羲承套装（需补运费，无特典，获得羲承单封+随机一张共计两张）或是购买K4裸专（52元/50元），这样可以获得羲承专辑或者特典<br><a href="https://cn.ktown4u.com/eventsub?eve_no=6954375&biz_no=599">购买：K4</a><br><a href="https://weibo.com/u/3587556515">小鹿园wb</a>',
-				attribute1: "option2",
-				attribute2: "option2",
-				attribute3: "option2",
-                link: "https://weibo.com/u/3587556515"
-			},
-            {
-				name:"你选择的,100元-200元预算 随机封面，随机特典",
-				image: "pictures/full.jpg",
-                description:'看来你只是想支持一下羲承中输，太感谢啦！请点击<a href="https://cn.ktown4u.com/eventsub?eve_no=6954375&biz_no=599">K4随机裸专一本</a>' ,
-				attribute1: "option3",
-				attribute2: "option1",
-				attribute3: "option1",
-                link: "https://cn.ktown4u.com/eventsub?eve_no=6954375&biz_no=599"
-			},
+<script>
+    const recommendations = [
+        {
+            name: "你选择了：60以下预算",
+            image: "pictures/engene.png",
+            description: '很抱歉，预算60以下可能无法指定获得羲承单封，不过可以考虑赌一把K4裸专，或是选择在不要专辑的情况下购买K4不运回（可获得羲承拍立得和随机小卡）价格50元（不运回）/52元（运回，要补邮费） <a href="https://cn.ktown4u.com/eventsub?eve_no=6954375&biz_no=599">购买</a>。',
+            attribute1: "option1",
+            attribute2: "option1",
+            attribute3: "none",
+            link: "https://cn.ktown4u.com/eventsub?eve_no=6954375&biz_no=599"
+        },
+        {
+            name: "你选择的是：60~100预算 随机封面，随机特典",
+            image: "pictures/full.jpg",
+            description: '60~100元全随机可以直接在K4购买裸专一张，<a href="https://cn.ktown4u.com/iteminfo?grp_no=1741898&fanc_goods_no=206174&goods_no=93855">PB版（团体写真集版）</a>和<a href="https://cn.ktown4u.com/iteminfo?grp_no=1741898&fanc_goods_no=206183&goods_no=93858">单封版（随机成员封面）</a>均可购入',
+            attribute1: "option2",
+            attribute2: "option1",
+            attribute3: "option1",
+            link: "https://cn.ktown4u.com/eventsub?eve_no=6954375&biz_no=599",
+        },
+        {
+            name: "你选择的是：60~100预算 随机封面，羲承特典",
+            image: "pictures/engene.png",
+            description: '目前你有两种选择：<br>实体专辑高于一切，请等待小鹿园x星河集美分批发售的98.8元1+1羲承套装（需补运费，无特典，获得羲承单封+随机一张共计两张）；更喜欢羲承小卡，请购买K4裸专（52元/50元），这样可以获得羲承专辑或者羲承特典二选一<br><a href="https://cn.ktown4u.com/eventsub?eve_no=6954375&biz_no=599">购买：K4</a><br><a href="https://weibo.com/u/3587556515">小鹿园wb</a>',
+            attribute1: "option2",
+            attribute2: "option1",
+            attribute3: "option2",
+            link: "https://cn.ktown4u.com/eventsub?eve_no=6954375&biz_no=599"
+        },
+        {
+            name: "你选择的是：60~100预算 羲承封面，随机特典",
+            image: "pictures/engenecover.png",
+            description: '目前你有两种选择：<br>等待小鹿园x星河集美分批发售的98.8元1+1羲承套装（需补运费，无特典，获得羲承单封+随机一张共计两张）或是购买K4裸专（52元/50元），这样可以获得羲承专辑或者特典<br><a href="https://cn.ktown4u.com/eventsub?eve_no=6954375&biz_no=599">购买：K4</a><br><a href="https://weibo.com/u/3587556515">小鹿园wb</a>',
+            attribute1: "option2",
+            attribute2: "option2",
+            attribute3: "option1",
+            link: "https://weibo.com/u/3587556515"
+        },
+        {
+            name: "你选择的是：60~100预算 羲承封面，羲承特典",
+            image: "pictures/engenecover.png",
+            description: '这个预算双指定有点难！目前你有两种选择：<br>等待小鹿园x星河集美分批发售的98.8元1+1羲承套装（需补运费，无特典，获得羲承单封+随机一张共计两张）或是购买K4裸专（52元/50元），这样可以获得羲承专辑或者特典<br><a href="https://cn.ktown4u.com/eventsub?eve_no=6954375&biz_no=599">购买：K4</a><br><a href="https://weibo.com/u/3587556515">小鹿园wb</a>',
+            attribute1: "option2",
+            attribute2: "option2",
+            attribute3: "option2",
+            link: "https://weibo.com/u/3587556515"
+        },
+        {
+            name: "你选择的,100元-200元预算 随机封面，随机特典",
+            image: "pictures/full.jpg",
+            description: '看来你只是想支持一下羲承中输，太感谢啦！请点击<a href="https://cn.ktown4u.com/eventsub?eve_no=6954375&biz_no=599">K4随机裸专一本</a>',
+            attribute1: "option3",
+            attribute2: "option1",
+            attribute3: "option1",
+            link: "https://cn.ktown4u.com/eventsub?eve_no=6954375&biz_no=599"
+        },
 
-            {
-				name:"你选择的,100元-200元预算 随机封面，羲承特典",
-				image: "pictures/engene.png",
-                description:'<br>请优先等待小鹿园x爱豆驿站分批发售的142元1+1特典套装，获得羲承单封+weverse羲承特典卡+weverse随机明信片，以及一套随机队友的配置<br><a href="https://weibo.com/u/3587556515">小鹿园wb</a><br>如果不想抢购也只想随便买一本，可以考虑购买<a href="https://cn.ktown4u.com/eventsub?eve_no=6954375&biz_no=599">K4随机裸专一本</a>' ,
-				attribute1: "option3",
-				attribute2: "option1",
-				attribute3: "option2",
-                link: "https://weibo.com/u/3587556515"
-			},
+        {
+            name: "你选择的,100元-200元预算 随机封面，羲承特典",
+            image: "pictures/engene.png",
+            description: '<br>请优先等待小鹿园x爱豆驿站分批发售的142元1+1特典套装，获得羲承单封+weverse羲承特典卡+weverse随机明信片，以及一套随机队友的配置<br><a href="https://weibo.com/u/3587556515">小鹿园wb</a><br>如果不想抢购也只想随便买一本，可以考虑购买<a href="https://cn.ktown4u.com/eventsub?eve_no=6954375&biz_no=599">K4随机裸专一本</a>',
+            attribute1: "option3",
+            attribute2: "option1",
+            attribute3: "option2",
+            link: "https://weibo.com/u/3587556515"
+        },
 
-            {
-				name:"你选择的,100元-200元预算 羲承封面，随机特典",
-				image: "pictures/engenecover.png",
-                description:'<br>请选择小鹿园x熊宝也妖娆分批发售的116元1+1套装，获得羲承单封+一张随机队友的配置<br><a href="https://shop881578129.v.weidian.com/item.html?itemID=6260132530">熊宝也妖娆第二个选项</a>（暂时售磬，请等待补货的括号）<br>如果不想抢购也只想随便买一本，可以考虑购买<a href="https://cn.ktown4u.com/eventsub?eve_no=6954375&biz_no=599">K4随机裸专一本</a>',
-				attribute1: "option3",
-				attribute2: "option2",
-				attribute3: "option1",
-                link: "https://shop881578129.v.weidian.com/item.html?itemID=6260132530"
-			},
+        {
+            name: "你选择的,100元-200元预算 羲承封面，随机特典",
+            image: "pictures/engenecover.png",
+            description: '<br>请选择小鹿园x熊宝也妖娆分批发售的116元1+1套装，获得羲承单封+一张随机队友的配置<br><a href="https://shop881578129.v.weidian.com/item.html?itemID=6260132530">熊宝也妖娆第二个选项</a>（暂时售磬，请等待补货的括号）<br>如果不想抢购也只想随便买一本，可以考虑购买<a href="https://cn.ktown4u.com/eventsub?eve_no=6954375&biz_no=599">K4随机裸专一本</a>',
+            attribute1: "option3",
+            attribute2: "option2",
+            attribute3: "option1",
+            link: "https://shop881578129.v.weidian.com/item.html?itemID=6260132530"
+        },
 
-  
-            {
-				name:"你选择的,100元-200元预算 羲承封面，羲承特典",
-				image: "pictures/engenecover.png",
-                description:'太好了！目前，你有了选择一些特典的空间。<br>请优先等待小鹿园x爱豆驿站分批发售的142元1+1特典套装，获得羲承单封+weverse羲承特典卡+weverse随机明信片，以及一套随机队友的配置<br><a href="https://weibo.com/u/3587556515">小鹿园wb</a><br>如果不想抢购，可以考虑在不要专辑的情况下购买K4不运回（可获得羲承拍立得和随机小卡），若需非羲承特典需要备注，或是赌一把随机封面<br>价格50元（不运回）/52元（运回，要补邮费）<br><a href="https://cn.ktown4u.com/eventsub?eve_no=6954375&biz_no=599">购买：K4</a>',
-				attribute1: "option3",
-				attribute2: "option2",
-				attribute3: "option2",
-                link: "https://weibo.com/u/3587556515"
-			},
 
-            {
-				name:"你选择的,200元-400元预算 随机封面，随机特典",
-				image: "pictures/full.jpg",
-                description:'看来你只是想支持一下羲承中输，太感谢啦！请点击<a href="https://cn.ktown4u.com/iteminfo?grp_no=1741898&fanc_goods_no=206170&goods_no=93862">K4写真集版套装</a>',
-				attribute1: "option4",
-				attribute2: "option1",
-				attribute3: "option1",
-                link: "https://cn.ktown4u.com/iteminfo?grp_no=1741898&fanc_goods_no=206170&goods_no=93862"
-			},
+        {
+            name: "你选择的,100元-200元预算 羲承封面，羲承特典",
+            image: "pictures/engenecover.png",
+            description: '太好了！目前，你有了选择一些特典的空间。<br>请优先等待小鹿园x爱豆驿站分批发售的142元1+1特典套装，获得羲承单封+weverse羲承特典卡+weverse随机明信片，以及一套随机队友的配置<br><a href="https://weibo.com/u/3587556515">小鹿园wb</a><br>如果不想抢购，可以考虑在不要专辑的情况下购买K4不运回（可获得羲承拍立得和随机小卡），若需非羲承特典需要备注，或是赌一把随机封面<br>价格50元（不运回）/52元（运回，要补邮费）<br><a href="https://cn.ktown4u.com/eventsub?eve_no=6954375&biz_no=599">购买：K4</a>',
+            attribute1: "option3",
+            attribute2: "option2",
+            attribute3: "option2",
+            link: "https://weibo.com/u/3587556515"
+        },
 
-            {
-				name:"你选择的,200元-400元预算 随机封面，羲承特典",
-				image: "pictures/set.png",
-                description:'随机封面超easy，你不仅获得一本而是7本！请点击<a href="https://cn.ktown4u.com/iteminfo?grp_no=1741898&fanc_goods_no=206175&goods_no=93869">K4单封版套装</a>，稳稳获得羲承封面+羲承特典！',
-				attribute1: "option4",
-				attribute2: "option1",
-				attribute3: "option2",
-                link: "https://cn.ktown4u.com/iteminfo?grp_no=1741898&fanc_goods_no=206175&goods_no=93869"
-			},
-            {
-				name:"你选择的,200元-400元预算 羲承封面，随机特典",
-				image: "pictures/set.png",
-                description:'随机特典超easy，你不仅获得1本而是7本！请点击<a href="https://cn.ktown4u.com/iteminfo?grp_no=1741898&fanc_goods_no=206175&goods_no=93869">K4单封版套装</a>，稳稳获得羲承封面+羲承特典！',
-				attribute1: "option4",
-				attribute2: "option2",
-				attribute3: "option1",
-                link: "https://cn.ktown4u.com/iteminfo?grp_no=1741898&fanc_goods_no=206175&goods_no=93869"
-			},
-            {
-				name:"你选择的,200元-400元预算 羲承封面，羲承特典",
-				image: "pictures/set.png",
-                description:'好耶！到了这个预算，你可以确定获得一整套专辑啦！<br><a href="https://cn.ktown4u.com/iteminfo?grp_no=1741898&fanc_goods_no=206175&goods_no=93869">羲承封面</a>：喜欢羲承封面的可以直接凑一套单封收藏，其中必定获得一张羲承的单封和拍立得<br><a href="https://cn.ktown4u.com/iteminfo?grp_no=1741898&fanc_goods_no=206170&goods_no=93862">随机：</a>喜欢设计味封面又想翻照片的可以选择PB版套装，可以获得暗月漫画相关的明信片',
-				attribute1: "option4",
-				attribute2: "option2",
-				attribute3: "option2",
-                link: "https://cn.ktown4u.com/iteminfo?grp_no=1741898&fanc_goods_no=206175&goods_no=93869"
-			},
-            {
-				name:"你选择的,400元-600元预算 羲承封面，羲承特典",
-				image: "pictures/full.jpg",
-                description:'真不错，这个预算下你所有的东西都可以成套了，不如考虑拥有一整套<a href="http://m.liveonepick.com/#/?productId=9b1ba50671de4ed38addfce8bfede72d&continueFlag=0e5a6e2357868bec5d1396545de0dec0">Weverse单封特典套装</a>吧！曾经出过美卡，这个版本赠送的东西也是最多的，虽然有点贵，赌一把！<br>',
-				attribute1: "option5",
-				attribute2: "none",
-				attribute3: "none",
-                link: "http://m.liveonepick.com/#/?productId=9b1ba50671de4ed38addfce8bfede72d&continueFlag=0e5a6e2357868bec5d1396545de0dec0"
-			},
-            {
-				name:"你选择的,600元以上预算 羲承封面，羲承特典",
-				image: "pictures/full2.jpg",
-                description:'太感动了！这个预算我们可以拥有一键毕业omg！<br>这个程度的预算如果你依旧不想拼车，可以选择<br><a href="https://k.youshop10.com/vtnTkBSO">A 我就想一键毕业</a><br><a href="https://www.nanyiglobal.com/2304ENPODGPB-652644-0?continueFlag=0e5a6e2357868bec5d1396545de0dec0">B 我想在一个平台自己选特典买完一切</a><br><a href="http://t.cn/A69uDg87">C 来个人帮我</a>',
-				attribute1: "option6",
-				attribute2: "none",
-				attribute3: "none",
-                link: "https://k.youshop10.com/vtnTkBSO"
-			},
-		];	
+        {
+            name: "你选择的,200元-400元预算 随机封面，随机特典",
+            image: "pictures/full.jpg",
+            description: '看来你只是想支持一下羲承中输，太感谢啦！请点击<a href="https://cn.ktown4u.com/iteminfo?grp_no=1741898&fanc_goods_no=206170&goods_no=93862">K4写真集版套装</a>',
+            attribute1: "option4",
+            attribute2: "option1",
+            attribute3: "option1",
+            link: "https://cn.ktown4u.com/iteminfo?grp_no=1741898&fanc_goods_no=206170&goods_no=93862"
+        },
 
-		//form
-		const form = document.querySelector("form");
-		form.addEventListener("submit", function(event) {
-			event.preventDefault(); // Prevent the form from submitting
+        {
+            name: "你选择的,200元-400元预算 随机封面，羲承特典",
+            image: "pictures/set.png",
+            description: '随机封面超easy，你不仅获得一本而是7本！请点击<a href="https://cn.ktown4u.com/iteminfo?grp_no=1741898&fanc_goods_no=206175&goods_no=93869">K4单封版套装</a>，稳稳获得羲承封面+羲承特典！',
+            attribute1: "option4",
+            attribute2: "option1",
+            attribute3: "option2",
+            link: "https://cn.ktown4u.com/iteminfo?grp_no=1741898&fanc_goods_no=206175&goods_no=93869"
+        },
+        {
+            name: "你选择的,200元-400元预算 羲承封面，随机特典",
+            image: "pictures/set.png",
+            description: '随机特典超easy，你不仅获得1本而是7本！请点击<a href="https://cn.ktown4u.com/iteminfo?grp_no=1741898&fanc_goods_no=206175&goods_no=93869">K4单封版套装</a>，稳稳获得羲承封面+羲承特典！',
+            attribute1: "option4",
+            attribute2: "option2",
+            attribute3: "option1",
+            link: "https://cn.ktown4u.com/iteminfo?grp_no=1741898&fanc_goods_no=206175&goods_no=93869"
+        },
+        {
+            name: "你选择的,200元-400元预算 羲承封面，羲承特典",
+            image: "pictures/set.png",
+            description: '好耶！到了这个预算，你可以确定获得一整套专辑啦！<br><a href="https://cn.ktown4u.com/iteminfo?grp_no=1741898&fanc_goods_no=206175&goods_no=93869">羲承封面</a>：喜欢羲承封面的可以直接凑一套单封收藏，其中必定获得一张羲承的单封和拍立得<br><a href="https://cn.ktown4u.com/iteminfo?grp_no=1741898&fanc_goods_no=206170&goods_no=93862">随机：</a>喜欢设计味封面又想翻照片的可以选择PB版套装，可以获得暗月漫画相关的明信片',
+            attribute1: "option4",
+            attribute2: "option2",
+            attribute3: "option2",
+            link: "https://cn.ktown4u.com/iteminfo?grp_no=1741898&fanc_goods_no=206175&goods_no=93869"
+        },
+        {
+            name: "你选择的,400元-600元预算 羲承封面，羲承特典",
+            image: "pictures/full.jpg",
+            description: '真不错，这个预算下你所有的东西都可以成套了，不如考虑拥有一整套<a href="http://m.liveonepick.com/#/?productId=9b1ba50671de4ed38addfce8bfede72d&continueFlag=0e5a6e2357868bec5d1396545de0dec0">Weverse单封特典套装</a>吧！曾经出过美卡，这个版本赠送的东西也是最多的，虽然有点贵，赌一把！<br>',
+            attribute1: "option5",
+            attribute2: "none",
+            attribute3: "none",
+            link: "http://m.liveonepick.com/#/?productId=9b1ba50671de4ed38addfce8bfede72d&continueFlag=0e5a6e2357868bec5d1396545de0dec0"
+        },
+        {
+            name: "你选择的,600元以上预算 羲承封面，羲承特典",
+            image: "pictures/full2.jpg",
+            description: '太感动了！这个预算我们可以拥有一键毕业omg！<br>这个程度的预算如果你依旧不想拼车，可以选择<br><a href="https://k.youshop10.com/vtnTkBSO">A 我就想一键毕业</a><br><a href="https://www.nanyiglobal.com/2304ENPODGPB-652644-0?continueFlag=0e5a6e2357868bec5d1396545de0dec0">B 我想在一个平台自己选特典买完一切</a><br><a href="http://t.cn/A69uDg87">C 来个人帮我</a>',
+            attribute1: "option6",
+            attribute2: "none",
+            attribute3: "none",
+            link: "https://k.youshop10.com/vtnTkBSO"
+        },
+    ];
 
-			// Get the selected attribute values
-			const attribute1 = document.querySelector("input[name='attribute1']");
-			const attribute2 = document.querySelector("input[name='attribute2']");
-			const attribute3 = document.querySelector("input[name='attribute3']");
-            const attribute1_check = document.querySelector("input[name='attribute1']:checked");
-			const attribute2_check = document.querySelector("input[name='attribute2']:checked");
-			const attribute3_check = document.querySelector("input[name='attribute3']:checked");
-            const att1 = attribute1.disabled || attribute1_check == null ? "none" : attribute1_check.value;
-            const att2 = attribute2.disabled || attribute2_check == null ? "none" : attribute2_check.value;
-            const att3 = attribute3.disabled || attribute3_check == null ? "none" : attribute3_check.value;
+    //form
+    const form = document.querySelector("form");
+    form.addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent the form from submitting
 
-			const filteredProducts = recommendations.filter(function(recommendation) {
-				return recommendation.attribute1 === att1 && recommendation.attribute2 === att2 && recommendation.attribute3 === att3;
-			});
+        // Get the selected attribute values
+        const attribute1 = document.querySelector("input[name='attribute1']");
+        const attribute2 = document.querySelector("input[name='attribute2']");
+        const attribute3 = document.querySelector("input[name='attribute3']");
+        const attribute1_check = document.querySelector("input[name='attribute1']:checked");
+        const attribute2_check = document.querySelector("input[name='attribute2']:checked");
+        const attribute3_check = document.querySelector("input[name='attribute3']:checked");
+        const att1 = attribute1.disabled || attribute1_check == null ? "none" : attribute1_check.value;
+        const att2 = attribute2.disabled || attribute2_check == null ? "none" : attribute2_check.value;
+        const att3 = attribute3.disabled || attribute3_check == null ? "none" : attribute3_check.value;
 
-			// HTML recommendation showing
-			let recommendationHTML = "";
-			filteredProducts.forEach(function(recommendation) {
-				recommendationHTML += `
+        const filteredProducts = recommendations.filter(function (recommendation) {
+            return recommendation.attribute1 === att1 && recommendation.attribute2 === att2 && recommendation.attribute3 === att3;
+        });
+
+        // HTML recommendation showing
+        let recommendationHTML = "";
+        filteredProducts.forEach(function (recommendation) {
+            recommendationHTML += `
 					<div>
 						<p>${recommendation.name}</p>
                         <p>${recommendation.description}</p>
                         <a href="${recommendation.link}"><img src="${recommendation.image}" style="max-width:80%;height:auto;margin:auto"></a>
                 </div>
 				`;
-                
-			});
 
-			//recommendation
-			const recommendationBox = document.querySelector("#recommendation");
-			recommendationBox.innerHTML = recommendationHTML;
-		});
+        });
+
+        //recommendation
+        const recommendationBox = document.querySelector("#recommendation");
+        recommendationBox.innerHTML = recommendationHTML;
+    });
 
 
-        
 
-        //listener
-        const el1 = document.getElementById("attribute1_option1")
-        el1.addEventListener("click", radioOption1);
 
-        const el2 = document.getElementById("attribute1_option2");
-        el2.addEventListener("click", radioOption2);
+    //listener
+    const el1 = document.getElementById("attribute1_option1")
+    el1.addEventListener("click", radioOption1);
 
-        const el3 = document.getElementById("attribute1_option3");
-        el3.addEventListener("click", radioOption3);
+    const el2 = document.getElementById("attribute1_option2");
+    el2.addEventListener("click", radioOption2);
 
-        const el4 = document.getElementById("attribute1_option4");
-        el4.addEventListener("click", radioOption4);
+    const el3 = document.getElementById("attribute1_option3");
+    el3.addEventListener("click", radioOption3);
 
-        const el5 = document.getElementById("attribute1_option5");
-        el5.addEventListener("click", radioOption5);
+    const el4 = document.getElementById("attribute1_option4");
+    el4.addEventListener("click", radioOption4);
 
-        const el6 = document.getElementById("attribute1_option6");
-        el6.addEventListener("click", radioOption6);
+    const el5 = document.getElementById("attribute1_option5");
+    el5.addEventListener("click", radioOption5);
 
-        //radio option
-        function radioOption1() {
-            const val1 = document.getElementById("attribute1_option1");
+    const el6 = document.getElementById("attribute1_option6");
+    el6.addEventListener("click", radioOption6);
 
-            if (val1.checked) {
-                document.getElementById("attribute2_option1").disabled = false;
-                document.getElementById("attribute2_option1").checked = true;
-                document.getElementById("attribute2_option2").disabled = true;
-                document.getElementById("attribute3_option1").disabled = true;
-                document.getElementById("attribute3_option2").disabled = true;
-            } else {
-                document.getElementById("attribute2_option1").disabled = false;
-                document.getElementById("attribute2_option2").disabled = false;
-                document.getElementById("attribute3_option1").disabled = false;
-                document.getElementById("attribute3_option2").disabled = false;
-            }
+    //radio option
+    function radioOption1() {
+        const val1 = document.getElementById("attribute1_option1");
+
+        if (val1.checked) {
+            document.getElementById("attribute2_option1").disabled = false;
+            document.getElementById("attribute2_option1").checked = true;
+            document.getElementById("attribute2_option2").disabled = true;
+            document.getElementById("attribute3_option1").disabled = true;
+            document.getElementById("attribute3_option2").disabled = true;
+        } else {
+            document.getElementById("attribute2_option1").disabled = false;
+            document.getElementById("attribute2_option2").disabled = false;
+            document.getElementById("attribute3_option1").disabled = false;
+            document.getElementById("attribute3_option2").disabled = false;
         }
+    }
 
-        function radioOption2() {
-            const val1 = document.getElementById("attribute1_option2");
+    function radioOption2() {
+        const val1 = document.getElementById("attribute1_option2");
 
-            if (val1.checked) {
-                document.getElementById("attribute2_option1").disabled = false;
-                document.getElementById("attribute2_option2").disabled = false;
-                document.getElementById("attribute3_option1").disabled = false;
-                document.getElementById("attribute3_option2").disabled = false;
-            }
+        if (val1.checked) {
+            document.getElementById("attribute2_option1").disabled = false;
+            document.getElementById("attribute2_option2").disabled = false;
+            document.getElementById("attribute3_option1").disabled = false;
+            document.getElementById("attribute3_option2").disabled = false;
         }
+    }
 
-        function radioOption3() {
-            const val1 = document.getElementById("attribute1_option3");
+    function radioOption3() {
+        const val1 = document.getElementById("attribute1_option3");
 
-            if (val1.checked) {
-                document.getElementById("attribute2_option1").disabled = false;
-                document.getElementById("attribute2_option2").disabled = false;
-                document.getElementById("attribute3_option1").disabled = false;
-                document.getElementById("attribute3_option2").disabled = false;
-            } else {
-                document.getElementById("attribute2_option1").disabled = false;
-                document.getElementById("attribute2_option2").disabled = false;
-                document.getElementById("attribute3_option1").disabled = false;
-                document.getElementById("attribute3_option2").disabled = false;
-            }
+        if (val1.checked) {
+            document.getElementById("attribute2_option1").disabled = false;
+            document.getElementById("attribute2_option2").disabled = false;
+            document.getElementById("attribute3_option1").disabled = false;
+            document.getElementById("attribute3_option2").disabled = false;
+        } else {
+            document.getElementById("attribute2_option1").disabled = false;
+            document.getElementById("attribute2_option2").disabled = false;
+            document.getElementById("attribute3_option1").disabled = false;
+            document.getElementById("attribute3_option2").disabled = false;
         }
+    }
 
-        function radioOption4() {
-            const val1 = document.getElementById("attribute1_option4");
-            if (val1.checked) {
-                document.getElementById("attribute2_option1").disabled = false;
-                document.getElementById("attribute2_option2").disabled = false;
-                document.getElementById("attribute3_option1").disabled = false;
-                document.getElementById("attribute3_option2").disabled = false;
-            } else {
-                document.getElementById("attribute2_option1").disabled = false;
-                document.getElementById("attribute2_option2").disabled = false;
-                document.getElementById("attribute3_option1").disabled = false;
-                document.getElementById("attribute3_option2").disabled = false;
-            }
+    function radioOption4() {
+        const val1 = document.getElementById("attribute1_option4");
+        if (val1.checked) {
+            document.getElementById("attribute2_option1").disabled = false;
+            document.getElementById("attribute2_option2").disabled = false;
+            document.getElementById("attribute3_option1").disabled = false;
+            document.getElementById("attribute3_option2").disabled = false;
+        } else {
+            document.getElementById("attribute2_option1").disabled = false;
+            document.getElementById("attribute2_option2").disabled = false;
+            document.getElementById("attribute3_option1").disabled = false;
+            document.getElementById("attribute3_option2").disabled = false;
         }
+    }
 
-        function radioOption5() {
-            const val1 = document.getElementById("attribute1_option5");
-            if (val1.checked) {
-                document.getElementById("attribute2_option1").disabled = true;
-                document.getElementById("attribute2_option2").disabled = false;
-                document.getElementById("attribute3_option1").disabled = true;
-                document.getElementById("attribute3_option2").disabled = false;
-                document.getElementById("attribute2_option1").checked = false;
-                document.getElementById("attribute2_option2").checked = true;
-                document.getElementById("attribute3_option1").checked = false;
-                document.getElementById("attribute3_option2").checked = true;
+    function radioOption5() {
+        const val1 = document.getElementById("attribute1_option5");
+        if (val1.checked) {
+            document.getElementById("attribute2_option1").disabled = true;
+            document.getElementById("attribute2_option2").disabled = false;
+            document.getElementById("attribute3_option1").disabled = true;
+            document.getElementById("attribute3_option2").disabled = false;
+            document.getElementById("attribute2_option1").checked = false;
+            document.getElementById("attribute2_option2").checked = true;
+            document.getElementById("attribute3_option1").checked = false;
+            document.getElementById("attribute3_option2").checked = true;
 
-            } else {
-                document.getElementById("attribute2_option1").disabled = false;
-                document.getElementById("attribute2_option2").disabled = false;
-                document.getElementById("attribute3_option1").disabled = false;
-                document.getElementById("attribute3_option2").disabled = false;
-            }
+        } else {
+            document.getElementById("attribute2_option1").disabled = false;
+            document.getElementById("attribute2_option2").disabled = false;
+            document.getElementById("attribute3_option1").disabled = false;
+            document.getElementById("attribute3_option2").disabled = false;
         }
+    }
 
-        function radioOption6() {
-            const val1 = document.getElementById("attribute1_option6");
-            if (val1.checked) {
-                document.getElementById("attribute2_option1").disabled = true;
-                document.getElementById("attribute2_option2").disabled = false;
-                document.getElementById("attribute3_option1").disabled = true;
-                document.getElementById("attribute3_option2").disabled = false;
-                document.getElementById("attribute2_option1").checked = false;
-                document.getElementById("attribute2_option2").checked = true;
-                document.getElementById("attribute3_option1").checked = false;
-                document.getElementById("attribute3_option2").checked = true;
+    function radioOption6() {
+        const val1 = document.getElementById("attribute1_option6");
+        if (val1.checked) {
+            document.getElementById("attribute2_option1").disabled = true;
+            document.getElementById("attribute2_option2").disabled = false;
+            document.getElementById("attribute3_option1").disabled = true;
+            document.getElementById("attribute3_option2").disabled = false;
+            document.getElementById("attribute2_option1").checked = false;
+            document.getElementById("attribute2_option2").checked = true;
+            document.getElementById("attribute3_option1").checked = false;
+            document.getElementById("attribute3_option2").checked = true;
 
-            } else {
-                document.getElementById("attribute2_option1").disabled = false;
-                document.getElementById("attribute2_option2").disabled = false;
-                document.getElementById("attribute3_option1").disabled = false;
-                document.getElementById("attribute3_option2").disabled = false;
-            }
+        } else {
+            document.getElementById("attribute2_option1").disabled = false;
+            document.getElementById("attribute2_option2").disabled = false;
+            document.getElementById("attribute3_option1").disabled = false;
+            document.getElementById("attribute3_option2").disabled = false;
         }
-    </script>
+    }
+</script>
 
 </html>
-
-<style>
-a {
-  color: #1772d0;
-  text-decoration: none;
-}
-
-a:focus,
-a:hover {
-  color: #f09228;
-  text-decoration: none;
-}
-
-body {
-    max-width: 800px;
-    margin: auto;
-    padding-left: 2vw;
-    padding-right: 2vw;
-}
-
-body,
-td,
-th,
-tr,
-p,
-a {
-  font-family: Verdana, Helvetica, sans-serif;
-  font-size: calc(8px + 1.0vw)
-}
-
-h1 {
-  font-family: Verdana, Helvetica, sans-serif;
-  font-size: calc(12px + 1.5vw);
-}
-
-name {
-  font-family: Verdana, Helvetica, sans-serif;
-  font-size: 32px;
-}
-
-.one {
-  width: 160px;
-  height: 160px;
-  position: relative;
-}
-
-.two {
-  width: 160px;
-  height: 160px;
-  position: absolute;
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
-}
-
-.fade {
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
-}
-
-span.highlight {
-  font-family: Verdana, Helvetica, sans-serif;
-  background-color: #ffffd0;
-}
-
-input[type=submit] {
-    width: calc(50px + 5.0vw);  height: calc(50px + 2.5vw);
-}
-	
-</style>
